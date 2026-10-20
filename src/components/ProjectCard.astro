@@ -1,0 +1,19 @@
+---
+import MediaFrame from './MediaFrame.astro';
+const { href, title, description } = Astro.props;
+---
+
+<a class="project-card reveal" href={href}>
+  <MediaFrame>
+    <slot />
+  </MediaFrame>
+  <div class="project-caption">
+    <div>
+      <h3>{title}</h3>
+      <p>{description}</p>
+    </div>
+    <span class="arrow" aria-hidden="true">
+      ↗
+    </span>
+  </div>
+</a>

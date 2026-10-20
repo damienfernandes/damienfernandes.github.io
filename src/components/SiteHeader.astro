@@ -1,0 +1,18 @@
+---
+import { site, href } from '../config/site';
+import DesktopNav from './DesktopNav.astro';
+import MobileNav from './MobileNav.astro';
+import EcoModeToggle from './EcoModeToggle.astro';
+---
+
+<header class="header wrap">
+  <a class="brand" href={href('/')}>
+    {site.name}
+    <small>SOLUTIONS ARCHITECTURE &amp; PHD RESEARCH</small>
+  </a>
+  <DesktopNav />
+  <div class="header-actions">
+    <EcoModeToggle />
+    <MobileNav />
+  </div>
+</header>

@@ -1,0 +1,20 @@
+:root {
+  --ink: #111;
+  --text: #3d3d3d;
+  --muted: #646464;
+  --paper: #fff;
+  --soft: #f3f3f3;
+  --line: #dedede;
+  --lime: #c6fb50;
+  --deep: #193440;
+  --mint: #a8e6cf;
+  --radius: 1rem;
+  --small-radius: 0.5rem;
+  --max: 1400px;
+  --full: 1680px;
+  --gutter: clamp(20px, 4vw, 64px);
+  --font: Arial, Helvetica, sans-serif;
+  --h1: clamp(3.4rem, 7.8vw, 7.75rem);
+  --h2: clamp(2.5rem, 6vw, 6.125rem);
+  --section: clamp(4rem, 9vw, 10rem);
+}

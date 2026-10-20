@@ -1,0 +1,54 @@
+---
+import Base from '../layouts/Base.astro';
+import HeroIntro from '../components/HeroIntro.astro';
+import SectionHeading from '../components/SectionHeading.astro';
+import ProjectGrid from '../components/ProjectGrid.astro';
+import ResearchAxes from '../components/ResearchAxes.astro';
+import ContactBlock from '../components/ContactBlock.astro';
+import Button from '../components/Button.astro';
+import { href, site } from '../config/site';
+---
+
+<Base>
+  <HeroIntro />
+  <div class="wrap">
+    <section class="overview overview-with-photo section topline">
+      <div class="overview-content">
+        <p class="eyebrow">About / Approach</p>
+        <p class="lead" style="margin-top:1.25rem">
+          From enterprise banking software architecture to measuring the systemic environmental effects of AI.
+        </p>
+        <p style="max-width:54ch;margin-top:1.5rem">
+          I am a Solutions Architect for a banking software publisher (SBS) and a 2nd-year PhD candidate (5-year doctoral track) at the LISTIC laboratory (Université Savoie Mont Blanc). My research focuses on the multi-criteria Consequential Life Cycle Assessment (cLCA — GWP, AFP, water, energy) of integrating Artificial Intelligence into business service processes.
+        </p>
+        <Button href={href('/cv/')} secondary>
+          View Full CV / Resume
+        </Button>
+      </div>
+
+      <figure class="profile-portrait-frame">
+        <img
+          src={href('/damien-fernandes.jpg')}
+          alt={`Portrait of ${site.name}, Solutions Architect and PhD Researcher`}
+          width="600"
+          height="600"
+          loading="lazy"
+          decoding="async"
+          class="profile-portrait-img"
+        />
+      </figure>
+    </section>
+
+    <section class="section topline">
+      <SectionHeading number="01" title="Research in practice." />
+      <ProjectGrid />
+    </section>
+
+    <section class="section topline">
+      <SectionHeading number="02" title="Three pillars. One methodology." />
+      <ResearchAxes />
+    </section>
+
+    <ContactBlock />
+  </div>
+</Base>

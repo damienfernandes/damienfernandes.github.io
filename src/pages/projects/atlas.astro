@@ -1,0 +1,29 @@
+---
+import Case from '../../layouts/CaseStudyLayout.astro';
+import AtlasPreview from '../../components/AtlasPreview.astro';
+import Button from '../../components/Button.astro';
+import { href } from '../../config/site';
+---
+
+<Case
+  title="Research Atlas"
+  description="An interactive environment to explore the connections between academic sources, LCA methods, and research papers."
+>
+  <div
+    slot="media"
+    style="background:var(--deep);border-radius:1rem;max-width:100%;display:grid;place-items:center;padding:2rem"
+  >
+    <div style="width:680px;max-width:100%">
+      <AtlasPreview />
+    </div>
+  </div>
+  <h2>Understanding methodological relationships.</h2>
+  <p>
+    The Research Atlas connects academic literature, methodological building blocks, and article projects. Its temporal graph highlights documented dependencies across the doctoral thesis.
+  </p>
+  <h2>A curated public edition.</h2>
+  <p>
+    Only explicitly authorized objects and fields are exported to this public projection. An empty view indicates non-public work in progress rather than an absence of research.
+  </p>
+  <Button href={href('/atlas/')}>Open the Interactive Atlas</Button>
+</Case>

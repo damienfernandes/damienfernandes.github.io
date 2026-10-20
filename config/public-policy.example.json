@@ -1,0 +1,997 @@
+{
+  "schemaVersion": 1,
+  "adapter": "atlas-legacy-v10",
+  "sourceSha256": "fb6cb0b519801aeecefc5c82de828b95685f24fc3dfd4e4c9d0d37270a13a574",
+  "defaultVisibility": "private",
+  "records": [
+    {
+      "collection": "refs",
+      "id": "R17",
+      "visibility": "public",
+      "fields": [
+        "id",
+        "year",
+        "authors",
+        "title",
+        "url",
+        "scope",
+        "limit",
+        "blocks",
+        "kind",
+        "verified"
+      ]
+    },
+    {
+      "collection": "refs",
+      "id": "R01",
+      "visibility": "public",
+      "fields": [
+        "id",
+        "year",
+        "authors",
+        "title",
+        "url",
+        "scope",
+        "limit",
+        "blocks",
+        "kind",
+        "verified"
+      ]
+    },
+    {
+      "collection": "refs",
+      "id": "R02",
+      "visibility": "public",
+      "fields": [
+        "id",
+        "year",
+        "authors",
+        "title",
+        "url",
+        "scope",
+        "limit",
+        "blocks",
+        "kind",
+        "verified"
+      ]
+    },
+    {
+      "collection": "refs",
+      "id": "R19",
+      "visibility": "public",
+      "fields": [
+        "id",
+        "year",
+        "authors",
+        "title",
+        "url",
+        "scope",
+        "limit",
+        "blocks",
+        "kind",
+        "verified"
+      ]
+    },
+    {
+      "collection": "refs",
+      "id": "R03",
+      "visibility": "public",
+      "fields": [
+        "id",
+        "year",
+        "authors",
+        "title",
+        "url",
+        "scope",
+        "limit",
+        "blocks",
+        "kind",
+        "verified"
+      ]
+    },
+    {
+      "collection": "refs",
+      "id": "R04",
+      "visibility": "public",
+      "fields": [
+        "id",
+        "year",
+        "authors",
+        "title",
+        "url",
+        "scope",
+        "limit",
+        "blocks",
+        "kind",
+        "verified"
+      ]
+    },
+    {
+      "collection": "refs",
+      "id": "R05",
+      "visibility": "public",
+      "fields": [
+        "id",
+        "year",
+        "authors",
+        "title",
+        "url",
+        "scope",
+        "limit",
+        "blocks",
+        "kind",
+        "verified"
+      ]
+    },
+    {
+      "collection": "refs",
+      "id": "R06",
+      "visibility": "public",
+      "fields": [
+        "id",
+        "year",
+        "authors",
+        "title",
+        "url",
+        "scope",
+        "limit",
+        "blocks",
+        "kind",
+        "verified"
+      ]
+    },
+    {
+      "collection": "refs",
+      "id": "R07",
+      "visibility": "public",
+      "fields": [
+        "id",
+        "year",
+        "authors",
+        "title",
+        "url",
+        "scope",
+        "limit",
+        "blocks",
+        "kind",
+        "verified"
+      ]
+    },
+    {
+      "collection": "refs",
+      "id": "R08",
+      "visibility": "public",
+      "fields": [
+        "id",
+        "year",
+        "authors",
+        "title",
+        "url",
+        "scope",
+        "limit",
+        "blocks",
+        "kind",
+        "verified"
+      ]
+    },
+    {
+      "collection": "refs",
+      "id": "R18",
+      "visibility": "public",
+      "fields": [
+        "id",
+        "year",
+        "authors",
+        "title",
+        "url",
+        "scope",
+        "limit",
+        "blocks",
+        "kind",
+        "verified"
+      ]
+    },
+    {
+      "collection": "refs",
+      "id": "R09",
+      "visibility": "public",
+      "fields": [
+        "id",
+        "year",
+        "authors",
+        "title",
+        "url",
+        "scope",
+        "limit",
+        "blocks",
+        "kind",
+        "verified"
+      ]
+    },
+    {
+      "collection": "refs",
+      "id": "R10",
+      "visibility": "public",
+      "fields": [
+        "id",
+        "year",
+        "authors",
+        "title",
+        "url",
+        "scope",
+        "limit",
+        "blocks",
+        "kind",
+        "verified"
+      ]
+    },
+    {
+      "collection": "refs",
+      "id": "R11",
+      "visibility": "public",
+      "fields": [
+        "id",
+        "year",
+        "authors",
+        "title",
+        "url",
+        "scope",
+        "limit",
+        "blocks",
+        "kind",
+        "verified"
+      ]
+    },
+    {
+      "collection": "refs",
+      "id": "R20",
+      "visibility": "public",
+      "fields": [
+        "id",
+        "year",
+        "authors",
+        "title",
+        "url",
+        "scope",
+        "limit",
+        "blocks",
+        "kind",
+        "verified"
+      ]
+    },
+    {
+      "collection": "refs",
+      "id": "R12",
+      "visibility": "public",
+      "fields": [
+        "id",
+        "year",
+        "authors",
+        "title",
+        "url",
+        "scope",
+        "limit",
+        "blocks",
+        "kind",
+        "verified"
+      ]
+    },
+    {
+      "collection": "refs",
+      "id": "R13",
+      "visibility": "public",
+      "fields": [
+        "id",
+        "year",
+        "authors",
+        "title",
+        "url",
+        "scope",
+        "limit",
+        "blocks",
+        "kind",
+        "verified"
+      ]
+    },
+    {
+      "collection": "refs",
+      "id": "R16",
+      "visibility": "public",
+      "fields": [
+        "id",
+        "year",
+        "authors",
+        "title",
+        "url",
+        "scope",
+        "limit",
+        "blocks",
+        "kind",
+        "verified"
+      ]
+    },
+    {
+      "collection": "refs",
+      "id": "R21",
+      "visibility": "public",
+      "fields": [
+        "id",
+        "year",
+        "authors",
+        "title",
+        "url",
+        "scope",
+        "limit",
+        "blocks",
+        "kind",
+        "verified"
+      ]
+    },
+    {
+      "collection": "refs",
+      "id": "R24",
+      "visibility": "public",
+      "fields": [
+        "id",
+        "year",
+        "authors",
+        "title",
+        "url",
+        "scope",
+        "limit",
+        "blocks",
+        "kind",
+        "verified"
+      ]
+    },
+    {
+      "collection": "refs",
+      "id": "R25",
+      "visibility": "public",
+      "fields": [
+        "id",
+        "year",
+        "authors",
+        "title",
+        "url",
+        "scope",
+        "limit",
+        "blocks",
+        "kind",
+        "verified"
+      ]
+    },
+    {
+      "collection": "refs",
+      "id": "R14",
+      "visibility": "public",
+      "fields": [
+        "id",
+        "year",
+        "authors",
+        "title",
+        "url",
+        "scope",
+        "limit",
+        "blocks",
+        "kind",
+        "verified"
+      ]
+    },
+    {
+      "collection": "refs",
+      "id": "R15",
+      "visibility": "public",
+      "fields": [
+        "id",
+        "year",
+        "authors",
+        "title",
+        "url",
+        "scope",
+        "limit",
+        "blocks",
+        "kind",
+        "verified"
+      ]
+    },
+    {
+      "collection": "refs",
+      "id": "R22",
+      "visibility": "public",
+      "fields": [
+        "id",
+        "year",
+        "authors",
+        "title",
+        "url",
+        "scope",
+        "limit",
+        "blocks",
+        "kind",
+        "verified"
+      ]
+    },
+    {
+      "collection": "refs",
+      "id": "R23",
+      "visibility": "public",
+      "fields": [
+        "id",
+        "year",
+        "authors",
+        "title",
+        "url",
+        "scope",
+        "limit",
+        "blocks",
+        "kind",
+        "verified"
+      ]
+    },
+    {
+      "collection": "blocks",
+      "id": "B1",
+      "visibility": "public",
+      "fields": [
+        "id",
+        "num",
+        "title",
+        "question",
+        "inputs",
+        "outputs",
+        "process",
+        "example",
+        "equation",
+        "note",
+        "refs",
+        "upstream",
+        "downstream",
+        "status",
+        "year"
+      ]
+    },
+    {
+      "collection": "blocks",
+      "id": "B2",
+      "visibility": "public",
+      "fields": [
+        "id",
+        "num",
+        "title",
+        "question",
+        "inputs",
+        "outputs",
+        "process",
+        "example",
+        "equation",
+        "note",
+        "refs",
+        "upstream",
+        "downstream",
+        "status",
+        "year"
+      ]
+    },
+    {
+      "collection": "blocks",
+      "id": "B3",
+      "visibility": "public",
+      "fields": [
+        "id",
+        "num",
+        "title",
+        "question",
+        "inputs",
+        "outputs",
+        "process",
+        "example",
+        "equation",
+        "note",
+        "refs",
+        "upstream",
+        "downstream",
+        "status",
+        "year"
+      ]
+    },
+    {
+      "collection": "blocks",
+      "id": "B4",
+      "visibility": "public",
+      "fields": [
+        "id",
+        "num",
+        "title",
+        "question",
+        "inputs",
+        "outputs",
+        "process",
+        "example",
+        "equation",
+        "note",
+        "refs",
+        "upstream",
+        "downstream",
+        "status",
+        "year"
+      ]
+    },
+    {
+      "collection": "blocks",
+      "id": "B5",
+      "visibility": "public",
+      "fields": [
+        "id",
+        "num",
+        "title",
+        "question",
+        "inputs",
+        "outputs",
+        "process",
+        "example",
+        "equation",
+        "note",
+        "refs",
+        "upstream",
+        "downstream",
+        "status",
+        "year"
+      ]
+    },
+    {
+      "collection": "blocks",
+      "id": "B6",
+      "visibility": "public",
+      "fields": [
+        "id",
+        "num",
+        "title",
+        "question",
+        "inputs",
+        "outputs",
+        "process",
+        "example",
+        "equation",
+        "note",
+        "refs",
+        "upstream",
+        "downstream",
+        "status",
+        "year"
+      ]
+    },
+    {
+      "collection": "blocks",
+      "id": "B7",
+      "visibility": "public",
+      "fields": [
+        "id",
+        "num",
+        "title",
+        "question",
+        "inputs",
+        "outputs",
+        "process",
+        "example",
+        "equation",
+        "note",
+        "refs",
+        "upstream",
+        "downstream",
+        "status",
+        "year"
+      ]
+    },
+    {
+      "collection": "blocks",
+      "id": "B8",
+      "visibility": "public",
+      "fields": [
+        "id",
+        "num",
+        "title",
+        "question",
+        "inputs",
+        "outputs",
+        "process",
+        "example",
+        "equation",
+        "note",
+        "refs",
+        "upstream",
+        "downstream",
+        "status",
+        "year"
+      ]
+    },
+    {
+      "collection": "blocks",
+      "id": "B9",
+      "visibility": "public",
+      "fields": [
+        "id",
+        "num",
+        "title",
+        "question",
+        "inputs",
+        "outputs",
+        "process",
+        "example",
+        "equation",
+        "note",
+        "refs",
+        "upstream",
+        "downstream",
+        "status",
+        "year"
+      ]
+    },
+    {
+      "collection": "blocks",
+      "id": "B10",
+      "visibility": "public",
+      "fields": [
+        "id",
+        "num",
+        "title",
+        "question",
+        "inputs",
+        "outputs",
+        "process",
+        "example",
+        "equation",
+        "note",
+        "refs",
+        "upstream",
+        "downstream",
+        "status",
+        "year"
+      ]
+    },
+    {
+      "collection": "blocks",
+      "id": "B11",
+      "visibility": "public",
+      "fields": [
+        "id",
+        "num",
+        "title",
+        "question",
+        "inputs",
+        "outputs",
+        "process",
+        "example",
+        "equation",
+        "note",
+        "refs",
+        "upstream",
+        "downstream",
+        "status",
+        "year"
+      ]
+    },
+    {
+      "collection": "blocks",
+      "id": "B12",
+      "visibility": "public",
+      "fields": [
+        "id",
+        "num",
+        "title",
+        "question",
+        "inputs",
+        "outputs",
+        "process",
+        "example",
+        "equation",
+        "note",
+        "refs",
+        "upstream",
+        "downstream",
+        "status",
+        "year"
+      ]
+    },
+    {
+      "collection": "papers",
+      "id": "P0",
+      "visibility": "public",
+      "fields": [
+        "id",
+        "title",
+        "status",
+        "basis",
+        "question",
+        "innovation",
+        "existing",
+        "test",
+        "risk",
+        "blocks",
+        "depends",
+        "optional",
+        "stage",
+        "integration",
+        "refs",
+        "year"
+      ]
+    },
+    {
+      "collection": "papers",
+      "id": "P1",
+      "visibility": "public",
+      "fields": [
+        "id",
+        "title",
+        "status",
+        "basis",
+        "question",
+        "innovation",
+        "existing",
+        "test",
+        "risk",
+        "blocks",
+        "depends",
+        "optional",
+        "stage",
+        "integration",
+        "refs",
+        "year"
+      ]
+    },
+    {
+      "collection": "papers",
+      "id": "P2",
+      "visibility": "public",
+      "fields": [
+        "id",
+        "title",
+        "status",
+        "basis",
+        "question",
+        "innovation",
+        "existing",
+        "test",
+        "risk",
+        "blocks",
+        "depends",
+        "optional",
+        "stage",
+        "integration",
+        "refs",
+        "year"
+      ]
+    },
+    {
+      "collection": "papers",
+      "id": "P3",
+      "visibility": "public",
+      "fields": [
+        "id",
+        "title",
+        "status",
+        "basis",
+        "question",
+        "innovation",
+        "existing",
+        "test",
+        "risk",
+        "blocks",
+        "depends",
+        "optional",
+        "stage",
+        "integration",
+        "refs",
+        "year"
+      ]
+    },
+    {
+      "collection": "papers",
+      "id": "P4",
+      "visibility": "public",
+      "fields": [
+        "id",
+        "title",
+        "status",
+        "basis",
+        "question",
+        "innovation",
+        "existing",
+        "test",
+        "risk",
+        "blocks",
+        "depends",
+        "optional",
+        "stage",
+        "integration",
+        "refs",
+        "year"
+      ]
+    },
+    {
+      "collection": "papers",
+      "id": "P5",
+      "visibility": "public",
+      "fields": [
+        "id",
+        "title",
+        "status",
+        "basis",
+        "question",
+        "innovation",
+        "existing",
+        "test",
+        "risk",
+        "blocks",
+        "depends",
+        "optional",
+        "stage",
+        "integration",
+        "refs",
+        "year"
+      ]
+    },
+    {
+      "collection": "papers",
+      "id": "P6",
+      "visibility": "public",
+      "fields": [
+        "id",
+        "title",
+        "status",
+        "basis",
+        "question",
+        "innovation",
+        "existing",
+        "test",
+        "risk",
+        "blocks",
+        "depends",
+        "optional",
+        "stage",
+        "integration",
+        "refs",
+        "year"
+      ]
+    },
+    {
+      "collection": "papers",
+      "id": "P7",
+      "visibility": "public",
+      "fields": [
+        "id",
+        "title",
+        "status",
+        "basis",
+        "question",
+        "innovation",
+        "existing",
+        "test",
+        "risk",
+        "blocks",
+        "depends",
+        "optional",
+        "stage",
+        "integration",
+        "refs",
+        "year"
+      ]
+    },
+    {
+      "collection": "papers",
+      "id": "ATL-N1",
+      "visibility": "public",
+      "fields": [
+        "id",
+        "title",
+        "question",
+        "innovation",
+        "existing",
+        "test",
+        "depends",
+        "optional",
+        "blocks",
+        "stage",
+        "refs",
+        "risk",
+        "status",
+        "basis",
+        "integration",
+        "year"
+      ]
+    },
+    {
+      "collection": "papers",
+      "id": "ATL-N2",
+      "visibility": "public",
+      "fields": [
+        "id",
+        "title",
+        "question",
+        "innovation",
+        "existing",
+        "test",
+        "depends",
+        "optional",
+        "blocks",
+        "stage",
+        "refs",
+        "risk",
+        "status",
+        "basis",
+        "integration",
+        "year"
+      ]
+    },
+    {
+      "collection": "papers",
+      "id": "ATL-N3",
+      "visibility": "public",
+      "fields": [
+        "id",
+        "title",
+        "question",
+        "innovation",
+        "existing",
+        "test",
+        "depends",
+        "optional",
+        "blocks",
+        "stage",
+        "refs",
+        "risk",
+        "status",
+        "basis",
+        "integration",
+        "year"
+      ]
+    },
+    {
+      "collection": "papers",
+      "id": "ATL-N4",
+      "visibility": "public",
+      "fields": [
+        "id",
+        "title",
+        "status",
+        "basis",
+        "question",
+        "innovation",
+        "existing",
+        "test",
+        "risk",
+        "blocks",
+        "depends",
+        "optional",
+        "stage",
+        "integration",
+        "refs",
+        "year"
+      ]
+    },
+    {
+      "collection": "papers",
+      "id": "ATL-N5",
+      "visibility": "public",
+      "fields": [
+        "id",
+        "title",
+        "status",
+        "basis",
+        "question",
+        "innovation",
+        "existing",
+        "test",
+        "risk",
+        "blocks",
+        "depends",
+        "optional",
+        "stage",
+        "integration",
+        "refs",
+        "year"
+      ]
+    }
+  ],
+  "assets": []
+}

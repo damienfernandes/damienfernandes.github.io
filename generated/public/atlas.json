@@ -1,0 +1,1614 @@
+{
+  "schemaVersion": 1,
+  "prepared": true,
+  "refs": [
+    {
+      "id": "R17",
+      "year": 1998,
+      "authors": "Risto Lahdelma ; Joonas Hokkanen ; Pekka Salminen",
+      "title": "SMAA - Stochastic multiobjective acceptability analysis",
+      "url": "https://doi.org/10.1016/S0377-2217(97)00163-X",
+      "scope": "Explore les préférences/poids compatibles avec l’acceptabilité d’alternatives sous incertitude.",
+      "limit": "SMAA n’est pas une preuve de dominance robuste. Les hypothèses sur les espaces de poids et distributions doivent être explicites.",
+      "blocks": [
+        10,
+        11
+      ],
+      "kind": "Article évalué par les pairs",
+      "verified": "Métadonnées et contenu de notice primaire vérifiés le 17/10/2026. Lecture intégrale non présumée."
+    },
+    {
+      "id": "R01",
+      "year": 2005,
+      "authors": "Sangwon Suh ; Gjalt Huppes",
+      "title": "Methods for Life Cycle Inventory of a product",
+      "url": "https://doi.org/10.1016/j.jclepro.2003.04.001",
+      "scope": "Compare six méthodes d’inventaire, dont trois formes hybrides processus–entrées-sorties.",
+      "limit": "Fondement antérieur de l’hybridation ; ne démontre ni la complétude parfaite ni l’effet causal d’un achat de GPU.",
+      "blocks": [
+        2,
+        9
+      ],
+      "kind": "Article évalué par les pairs",
+      "verified": "Métadonnées et résumé/page primaire vérifiés le 17/10/2026 ; pas de revue intégrale systématique."
+    },
+    {
+      "id": "R02",
+      "year": 2010,
+      "authors": "A. D. Hawkes",
+      "title": "Estimating marginal CO2 emissions rates for national electricity systems",
+      "url": "https://doi.org/10.1016/j.enpol.2010.05.053",
+      "scope": "Explique pourquoi une variation de demande électrique requiert un facteur marginal adapté.",
+      "limit": "Étude carbone britannique historique ; aucun facteur transféré directement aux régions cloud actuelles ou aux autres impacts.",
+      "blocks": [
+        5
+      ],
+      "kind": "Article évalué par les pairs",
+      "verified": "Métadonnées et résumé/page primaire vérifiés le 17/10/2026 ; pas de revue intégrale systématique."
+    },
+    {
+      "id": "R19",
+      "year": 2010,
+      "authors": "Kenneth F. Schulz ; Douglas G. Altman ; David Moher ; CONSORT Group",
+      "title": "CONSORT 2010 Statement: updated guidelines for reporting parallel group randomised trials",
+      "url": "https://doi.org/10.1136/bmj.c332",
+      "scope": "Demande de documenter les dénominateurs et le maintien dans les groupes initialement assignés ; souligne les mésusages du terme intention-to-treat.",
+      "limit": "Inclure tous les lots éligibles ne suffit pas à définir un estimand ITT. Sans assignation de politique documentée, parler d’évaluation de la politique complète sur population éligible.",
+      "blocks": [
+        1,
+        3
+      ],
+      "kind": "Article évalué par les pairs",
+      "verified": "Métadonnées et contenu de notice primaire vérifiés le 17/10/2026. Lecture intégrale non présumée."
+    },
+    {
+      "id": "R03",
+      "year": 2016,
+      "authors": "David Font Vivanco ; Will McDowall ; Jaume Freire-González ; René Kemp ; Ester van der Voet",
+      "title": "The foundations of the environmental rebound effect and its contribution towards a general framework",
+      "url": "https://doi.org/10.1016/j.ecolecon.2016.02.006",
+      "scope": "Cadre du rebond environnemental au-delà de la seule énergie.",
+      "limit": "Ne fournit pas un coefficient de rebond propre à l’IA bancaire.",
+      "blocks": [
+        6,
+        7
+      ],
+      "kind": "Article évalué par les pairs",
+      "verified": "Métadonnées et résumé/page primaire vérifiés le 17/10/2026 ; pas de revue intégrale systématique."
+    },
+    {
+      "id": "R04",
+      "year": 2016,
+      "authors": "Jeremy R. Gregory ; Arash Noshadravan ; Elsa A. Olivetti ; Randolph E. Kirchain",
+      "title": "A Methodology for Robust Comparative Life Cycle Assessments Incorporating Uncertainty",
+      "url": "https://doi.org/10.1021/acs.est.5b04969",
+      "scope": "Explore l’espace des scénarios et les incertitudes pour identifier les comparaisons résolues.",
+      "limit": "Notre séparation stricte des branches sans poids est une proposition d’implémentation, pas une prescription littérale de cet article.",
+      "blocks": [
+        4,
+        10,
+        11
+      ],
+      "kind": "Article évalué par les pairs",
+      "verified": "Métadonnées et résumé/page primaire vérifiés le 17/10/2026 ; pas de revue intégrale systématique."
+    },
+    {
+      "id": "R05",
+      "year": 2017,
+      "authors": "Carl Vadenbo ; Stefanie Hellweg ; Thomas Fruergaard Astrup",
+      "title": "Let’s Be Clear(er) about Substitution: A Reporting Framework to Account for Product Displacement in Life Cycle Assessment",
+      "url": "https://doi.org/10.1111/jiec.12519",
+      "scope": "Distingue potentiel physique, efficacité de récupération et taux de déplacement.",
+      "limit": "Application d’origine aux déchets ; transfert aux workflows IA à justifier. En ligne en 2016, volume en 2017.",
+      "blocks": [
+        3,
+        6
+      ],
+      "kind": "Article évalué par les pairs",
+      "verified": "Métadonnées et résumé/page primaire vérifiés le 17/10/2026 ; pas de revue intégrale systématique."
+    },
+    {
+      "id": "R06",
+      "year": 2017,
+      "authors": "E. A. Groen ; R. Heijungs",
+      "title": "Ignoring correlation in uncertainty and sensitivity analysis in life cycle assessment: what is the risk?",
+      "url": "https://doi.org/10.1016/j.eiar.2016.10.006",
+      "scope": "Les corrélations peuvent augmenter ou réduire la variance et modifier la sensibilité.",
+      "limit": "Les dépendances doivent être estimées ; un identifiant commun ne prouve pas que le modèle de covariance est juste.",
+      "blocks": [
+        10
+      ],
+      "kind": "Article évalué par les pairs",
+      "verified": "Métadonnées et résumé/page primaire vérifiés le 17/10/2026 ; pas de revue intégrale systématique."
+    },
+    {
+      "id": "R07",
+      "year": 2018,
+      "authors": "Anne-Marie Boulay ; Jane Bare ; Lorenzo Benini ; Markus Berger ; Michael J. Lathuillière ; Alessandro Manzardo ; Manuele Margni ; Masaharu Motoshita ; Montserrat Núñez ; Amandine Valerie Pastor ; Bradley Ridoutt ; Taikan Oki ; Sebastien Worbe ; Stephan Pfister",
+      "title": "The WULCA consensus characterization model for water scarcity footprints: assessing impacts of water consumption based on available water remaining (AWARE)",
+      "url": "https://doi.org/10.1007/s11367-017-1333-8",
+      "scope": "Caractérise le potentiel de privation d’eau à partir de la consommation d’eau localisée.",
+      "limit": "Une empreinte de rareté n’est pas un volume brut prélevé. En ligne en 2017, volume en 2018.",
+      "blocks": [
+        8
+      ],
+      "kind": "Article évalué par les pairs",
+      "verified": "Métadonnées et résumé/page primaire vérifiés le 17/10/2026 ; pas de revue intégrale systématique."
+    },
+    {
+      "id": "R08",
+      "year": 2018,
+      "authors": "Angelica Mendoza Beltran ; Valentina Prado ; David Font Vivanco ; Patrik J. G. Henriksson ; Jeroen B. Guinée ; Reinout Heijungs",
+      "title": "Quantified Uncertainties in Comparative Life Cycle Assessment: What Can Be Concluded?",
+      "url": "https://doi.org/10.1021/acs.est.7b06365",
+      "scope": "Compare cinq approches d’interprétation probabiliste ; montre l’importance des incertitudes communes.",
+      "limit": "Ne transforme pas un scénario sans probabilité en distribution empirique.",
+      "blocks": [
+        3,
+        10
+      ],
+      "kind": "Article évalué par les pairs",
+      "verified": "Métadonnées et résumé/page primaire vérifiés le 17/10/2026 ; pas de revue intégrale systématique."
+    },
+    {
+      "id": "R18",
+      "year": 2021,
+      "authors": "Brantly Callaway ; Pedro H. C. Sant’Anna",
+      "title": "Difference-in-Differences with multiple time periods",
+      "url": "https://doi.org/10.1016/j.jeconom.2020.12.001",
+      "scope": "Identification et estimation d’effets de traitement avec adoptions échelonnées et tendances parallèles éventuellement conditionnelles.",
+      "limit": "Un panel ou un registre ne suffit pas : vérifier groupes de comparaison, anticipation, interférences et tendances préalables. Un test non significatif ne prouve pas les tendances parallèles.",
+      "blocks": [
+        4,
+        6,
+        7
+      ],
+      "kind": "Article évalué par les pairs",
+      "verified": "Métadonnées et contenu de notice primaire vérifiés le 17/10/2026. Lecture intégrale non présumée."
+    },
+    {
+      "id": "R09",
+      "year": 2022,
+      "authors": "R. Sacchi ; T. Terlouw ; K. Siala ; A. Dirnaichner ; C. Bauer ; B. Cox ; C. Mutel ; V. Daioglou ; G. Luderer",
+      "title": "PRospective EnvironMental Impact asSEment (premise): A streamlined approach to producing databases for prospective life cycle assessment using integrated assessment models",
+      "url": "https://doi.org/10.1016/j.rser.2022.112311",
+      "scope": "Adapte les inventaires à des trajectoires socioéconomiques et technologiques cohérentes.",
+      "limit": "Une base prospective ne suffit pas à identifier la causalité de l’adoption d’IA chez SBS.",
+      "blocks": [
+        4,
+        5,
+        8,
+        9
+      ],
+      "kind": "Article évalué par les pairs",
+      "verified": "Métadonnées et résumé/page primaire vérifiés le 17/10/2026 ; pas de revue intégrale systématique."
+    },
+    {
+      "id": "R10",
+      "year": 2023,
+      "authors": "Susanna Andreasi Bassi ; Fabrizio Biganzoli ; Nicola Ferrara ; Andrea Amadei ; Antonio Valente ; Serenella Sala ; Fulvio Ardente",
+      "title": "Updated characterisation and normalisation factors for the environmental footprint 3.1 method",
+      "url": "https://doi.org/10.2760/798894",
+      "scope": "Documente la mise à jour EF 3.1 et ses facteurs de caractérisation et normalisation.",
+      "limit": "Le paquet du YAML ajoutant CED n’est pas EF 3.1 pur ; unités et conversions doivent être vérifiées.",
+      "blocks": [
+        8
+      ],
+      "kind": "Rapport scientifique JRC",
+      "verified": "Métadonnées et résumé/page primaire vérifiés le 17/10/2026 ; pas de revue intégrale systématique."
+    },
+    {
+      "id": "R11",
+      "year": 2024,
+      "authors": "Sasha Luccioni ; Yacine Jernite ; Emma Strubell",
+      "title": "Power Hungry Processing: Watts Driving the Cost of AI Deployment?",
+      "url": "https://doi.org/10.1145/3630106.3658542",
+      "scope": "Compare énergie et carbone de l’inférence pour des tâches et modèles spécialisés ou généralistes.",
+      "limit": "Benchmark d’inférence ; ne mesure pas le contrefactuel organisationnel complet ni le rebond. Version corrigée signalée par ACM le 06/11/2024.",
+      "blocks": [
+        3,
+        10
+      ],
+      "kind": "Article évalué par les pairs",
+      "verified": "Métadonnées et résumé/page primaire vérifiés le 17/10/2026 ; pas de revue intégrale systématique."
+    },
+    {
+      "id": "R20",
+      "year": 2024,
+      "authors": "ISO",
+      "title": "ISO 14072:2024 — Environmental management — Life cycle assessment — Requirements and guidance for organizational life cycle assessment",
+      "url": "https://www.iso.org/standard/86265.html",
+      "scope": "Exigences additionnelles et guidance pour appliquer ISO 14040/44 aux organisations sur une période.",
+      "limit": "Notice publique consultée, norme complète non auditée. Une conformité clause par clause ne peut pas être affirmée ici.",
+      "blocks": [
+        1,
+        11
+      ],
+      "kind": "Norme — notice officielle",
+      "verified": "Métadonnées et contenu de notice primaire vérifiés le 17/10/2026. Lecture intégrale non présumée."
+    },
+    {
+      "id": "R12",
+      "year": 2025,
+      "authors": "Adrien Berthelot ; Eddy Caron ; Mathilde Jay ; Laurent Lefèvre",
+      "title": "Understanding the Environmental Impact of Generative AI Services",
+      "url": "https://doi.org/10.1145/3725984",
+      "scope": "Étend l’évaluation au service GenAI et à son cycle de vie, avec composants et usages.",
+      "limit": "Le périmètre du service ne démontre pas une réduction nette après substitution et rebond.",
+      "blocks": [
+        1,
+        2,
+        8,
+        9
+      ],
+      "kind": "Article évalué par les pairs",
+      "verified": "Métadonnées et résumé/page primaire vérifiés le 17/10/2026 ; pas de revue intégrale systématique."
+    },
+    {
+      "id": "R13",
+      "year": 2025,
+      "authors": "Christiane Plociennik ; Ponnapat Watjanatepin ; Karel Van Acker ; Martin Ruskowski",
+      "title": "Life Cycle Assessment of Artificial Intelligence Applications: Research Gaps and Opportunities",
+      "url": "https://doi.org/10.1016/j.procir.2025.01.079",
+      "scope": "Identifie des lacunes de l’ACV IA et propose une adaptation méthodologique multicritère.",
+      "limit": "Une synthèse de lacunes ne prouve pas que notre combinaison est la première ; recherche d’antériorité complémentaire requise.",
+      "blocks": [
+        1,
+        8,
+        12
+      ],
+      "kind": "Article évalué par les pairs",
+      "verified": "Métadonnées et résumé/page primaire vérifiés le 17/10/2026 ; pas de revue intégrale systématique."
+    },
+    {
+      "id": "R16",
+      "year": 2025,
+      "authors": "Nolan H. Woo",
+      "title": "A comparative study of AI and human programming on environmental sustainability",
+      "url": "https://doi.org/10.1038/s41598-025-24658-5",
+      "scope": "Compare du code sous contrôle de correction et prend en compte les itérations de correction.",
+      "limit": "Une comparaison spécifique ne valide ni tous les workflows bancaires ni une première application de l’intention de traiter en ACV.",
+      "blocks": [
+        3
+      ],
+      "kind": "Article évalué par les pairs",
+      "verified": "Métadonnées et contenu de notice primaire vérifiés le 17/10/2026. Lecture intégrale non présumée."
+    },
+    {
+      "id": "R21",
+      "year": 2025,
+      "authors": "UIT-T",
+      "title": "Enabling the Net Zero transition – Assessing how the use of information and communication technology solutions impacts greenhouse gas emissions of other sectors",
+      "url": "https://www.itu.int/ITU-T/recommendations/rec.aspx?rec=16428",
+      "scope": "L.1480, édition de juillet 2025 : effets nets de second ordre et effets supérieurs, dont rebond.",
+      "limit": "Périmètre GES : l’extension à l’eau, aux ressources et à l’énergie doit être justifiée, non attribuée à la norme.",
+      "blocks": [
+        4,
+        6,
+        7
+      ],
+      "kind": "Recommandation normative",
+      "verified": "Métadonnées et contenu de notice primaire vérifiés le 17/10/2026. Lecture intégrale non présumée."
+    },
+    {
+      "id": "R24",
+      "year": 2025,
+      "authors": "Husam Alissa ; Teresa Nick ; Ashish Raniwala ; Alberto Arribas Herranz ; Kali Frost ; Ioannis Manousakis ; Kari Lio ; Brijesh Warrier ; Vaidehi Oruganti ; T. J. DiCaprio ; Kathryn Oseen-Senda ; Bharath Ramakrishnan ; Naval Gupta ; Ricardo Bianchini ; Jim Kleewein ; Christian Belady ; Marcus Fontoura ; Julie Sinistore ; Mukunth Natarajan ; Lauren Johnson ; VeeAnder Mealing ; Praneet Arshi ; Madeline Frieze",
+      "title": "Using life cycle assessment to drive innovation for sustainable cool clouds",
+      "url": "https://doi.org/10.1038/s41586-025-08832-3",
+      "scope": "Relie composants du cloud, serveurs, bâtiment et réseau dans une ACV de technologies de refroidissement.",
+      "limit": "Contredit une revendication trop large de pont inédit entre logiciel et ACV physique ; ne fournit pas à elle seule le protocole de traçage conséquentiel proposé.",
+      "blocks": [
+        2,
+        8,
+        9
+      ],
+      "kind": "Article évalué par les pairs",
+      "verified": "Métadonnées et contenu de notice primaire vérifiés le 17/10/2026. Lecture intégrale non présumée."
+    },
+    {
+      "id": "R25",
+      "year": 2025,
+      "authors": "Cooper Elsworth ; Keguo Huang ; David Patterson ; Ian Schneider ; Robert Sedivy ; Savannah Goodman ; Ben Townsend ; Parthasarathy Ranganathan ; Jeff Dean ; Amin Vahdat ; Ben Gomes ; James Manyika",
+      "title": "Measuring the environmental impact of delivering AI at Google Scale",
+      "url": "https://services.google.com/fh/files/misc/measuring_the_environmental_impact_of_delivering_ai_at_google_scale.pdf",
+      "scope": "Mesure industrielle de la pile d’inférence incluant accélérateurs, hôtes, capacité inactive et surcoûts de datacenter.",
+      "limit": "Rapport technique Google, évaluation par les pairs non établie ici. Mesure de service et attribution ne constituent pas une identification causale de l’adoption.",
+      "blocks": [
+        2,
+        3,
+        10
+      ],
+      "kind": "Rapport technique industriel",
+      "verified": "Métadonnées et contenu de notice primaire vérifiés le 17/10/2026. Lecture intégrale non présumée."
+    },
+    {
+      "id": "R14",
+      "year": 2026,
+      "authors": "UIT-T",
+      "title": "Guidelines for assessing the environmental impact of artificial intelligence systems",
+      "url": "https://www.itu.int/ITU-T/recommendations/rec.aspx?id=16642",
+      "scope": "L.1801, approuvée le 06/02/2026 : méthode ACV pour systèmes IA et comparaisons IA/non-IA.",
+      "limit": "Norme, non article académique. Les portes C0–C4 et les seuils locaux ne doivent pas lui être attribués.",
+      "blocks": [
+        1,
+        3,
+        12
+      ],
+      "kind": "Recommandation normative",
+      "verified": "Métadonnées et résumé/page primaire vérifiés le 17/10/2026 ; pas de revue intégrale systématique."
+    },
+    {
+      "id": "R15",
+      "year": 2026,
+      "authors": "Sophia Falk ; David Ekchajzer ; Thibault Pirson ; Etienne Lees-Perasso ; Augustin Wattiez ; Lisa Biber-Freudenberger ; Sasha Luccioni ; Aimee van Wynsberghe",
+      "title": "More than carbon: Cradle-to-grave environmental impacts of GenAI training on the Nvidia A100 GPU",
+      "url": "https://doi.org/10.1016/j.eiar.2026.108525",
+      "scope": "ACV matérielle et multicritère fondée sur démontage et inventaire élémentaire ; les effets du recours aux données primaires varient selon les catégories.",
+      "limit": "Prépublication arXiv:2509.00093 en 2025, article de revue en 2026. Ne démontre pas que tout renouvellement de GPU dégrade toujours ADPe. ADPe ne mesure pas directement la criticité géopolitique des métaux.",
+      "blocks": [
+        8,
+        9
+      ],
+      "kind": "Article évalué par les pairs",
+      "verified": "Métadonnées et contenu de notice primaire vérifiés le 17/10/2026. Lecture intégrale non présumée."
+    },
+    {
+      "id": "R22",
+      "year": 2026,
+      "authors": "OpenTelemetry",
+      "title": "Semantic conventions for generative AI inference token metrics",
+      "url": "https://github.com/open-telemetry/semantic-conventions-genai/blob/main/docs/gen-ai/gen-ai-token-metrics.md",
+      "scope": "Documentation de télémétrie des tokens et de leurs catégories ; certaines mesures sont facturables et certaines conventions signalent explicitement l’inconnu.",
+      "limit": "Documentation évolutive en développement : figer un commit pour l’étude. Les tokens ne mesurent ni joules ni achats matériels. Un zéro sentinelle avec modalité unknown ne doit pas devenir un zéro physique dans l’ACV.",
+      "blocks": [
+        2,
+        10,
+        12
+      ],
+      "kind": "Documentation technique · consultée en 2026",
+      "verified": "Métadonnées et contenu de notice primaire vérifiés le 17/10/2026. Lecture intégrale non présumée."
+    },
+    {
+      "id": "R23",
+      "year": 2026,
+      "authors": "Amazon Web Services",
+      "title": "Troubleshooting Cost and Usage Reports",
+      "url": "https://docs.aws.amazon.com/cur/latest/userguide/troubleshooting-cur.html",
+      "scope": "Documente les identifiants de ressources et les variations du schéma CUR.",
+      "limit": "Usage facturé et identifiant logique ne prouvent pas localisation physique, énergie ou capacité nouvellement fabriquée. Année affichée = consultation, pas publication.",
+      "blocks": [
+        2,
+        5
+      ],
+      "kind": "Documentation technique · consultée en 2026",
+      "verified": "Métadonnées et contenu de notice primaire vérifiés le 17/10/2026. Lecture intégrale non présumée."
+    },
+    {
+      "id": "nioche2026spruce",
+      "title": "SPRUCE: An Open-Source Enrichment Platform for GreenOps",
+      "authors": "Nioche, Julien",
+      "year": 2026,
+      "url": "https://github.com/DigitalPebble/spruce",
+      "verified": "Métadonnées importées le 20/10/2026 ; référence et affirmations non revérifiées."
+    },
+    {
+      "id": "R26",
+      "title": "CLEER: Closed-model Latent Energy Estimation Range. Technical Report",
+      "authors": "Nidhal Jegham ; Chan Young Koh ; Boris Gamazaychikov ; Sasha Luccioni",
+      "year": 2026,
+      "url": "https://reports.sustainableaigroup.com/CLEER-Tech-Report/",
+      "verified": "Métadonnées importées le 20/10/2026 ; référence et affirmations non revérifiées."
+    },
+    {
+      "id": "schneider2025lifecycle",
+      "title": "An Introduction to Life-Cycle Emissions of Artificial Intelligence Hardware",
+      "authors": "Schneider, Ian and Xu, Hui and Benecke, Stephan and Patterson, David and Huang, Keguo and Ranganathan, Parthasarathy and Elsworth, Cooper",
+      "year": 2025,
+      "url": "https://doi.org/10.1109/mm.2025.3592568",
+      "verified": "Métadonnées importées le 20/10/2026 ; référence et affirmations non revérifiées."
+    },
+    {
+      "id": "liu2025environmental",
+      "title": "Environmental Impact of Machinery and Equipment: A Comparison between EXIOBASE, National EE-IO Models, and Ecoinvent",
+      "authors": "Liu, Yiwen and Jiang, Meng and Hertwich, Edgar G.",
+      "year": 2025,
+      "url": "https://doi.org/10.1021/acs.est.5c08581",
+      "verified": "Métadonnées importées le 20/10/2026 ; référence et affirmations non revérifiées."
+    },
+    {
+      "id": "heijungs2025marginal",
+      "title": "Marginal and average considerations in LCA and their role for defining emission factors",
+      "authors": "Heijungs, Reinout",
+      "year": 2025,
+      "url": "https://doi.org/10.1007/s11367-025-02430-1",
+      "verified": "Métadonnées importées le 20/10/2026 ; référence et affirmations non revérifiées."
+    },
+    {
+      "id": "sukprasert2024implications",
+      "title": "On the Implications of Choosing Average versus Marginal Carbon Intensity Signals on Carbon-aware Optimizations",
+      "authors": "Sukprasert, Thanathorn and Bashir, Noman and Souza, Abel and Irwin, David and Shenoy, Prashant",
+      "year": 2024,
+      "url": "https://doi.org/10.1145/3632775.3661953",
+      "verified": "Métadonnées importées le 20/10/2026 ; référence et affirmations non revérifiées."
+    },
+    {
+      "id": "wu2025fuel",
+      "title": "Unveiling Environmental Impacts of Large Language Model Serving: A Functional Unit View",
+      "authors": "Wu, Yanran and Hua, Inez and Ding, Yi",
+      "year": 2025,
+      "verified": "Métadonnées importées le 20/10/2026 ; référence et affirmations non revérifiées."
+    },
+    {
+      "id": "valasara2026attributional",
+      "title": "Attributional and Consequential Life Cycle Assessments: A Practice-Oriented Framework Integrating System Boundaries and Machine Learning",
+      "authors": "Valasara, Vira and Ahn, Byeongchan and Won, Wangyun",
+      "year": 2026,
+      "url": "https://doi.org/10.1080/00219592.2026.2662789",
+      "verified": "Métadonnées importées le 20/10/2026 ; référence et affirmations non revérifiées."
+    },
+    {
+      "id": "cook2025beyond",
+      "title": "Beyond Counting Carbon: AI Environmental Assessments Struggle to Inform Net Impact Decisions",
+      "authors": "Cook, Ella and Obringer, Renee and Freitag, Charlotte and Donti, Priya",
+      "year": 2025,
+      "url": "https://doi.org/10.3929/ethz-c-000789254",
+      "verified": "Métadonnées importées le 20/10/2026 ; référence et affirmations non revérifiées."
+    },
+    {
+      "id": "ibrahim2026ai",
+      "title": "The AI Act and its green blind spots: Hidden environmental risks in the AI lifecycle",
+      "authors": "Ibrahim, Imad Antoine and Zaidan, Esmat and Truby, Jon and Hoppe, Thomas",
+      "year": 2026,
+      "url": "https://doi.org/10.1016/j.techsoc.2026.103284",
+      "verified": "Métadonnées importées le 20/10/2026 ; référence et affirmations non revérifiées."
+    }
+  ],
+  "blocks": [
+    {
+      "id": "B1",
+      "num": 1,
+      "title": "Contrat à 3 Unités & Typage",
+      "question": "Comment empêcher qu'un même nombre « par unité fonctionnelle » soit interprété comme intensité de service, empreinte organisationnelle et effet d'une décision ?",
+      "inputs": "Objectifs de l'étude, catalogue des services SBS, populations de lots bancaires et périodes de reporting.",
+      "outputs": "Trois unités typées : UO (compte attributionnel de période), UF (lot éligible mené jusqu'à disposition sous contraintes), UD (contraste conséquentiel d'adoption sur l'horizon H).",
+      "process": "Attribue à chaque chiffre une signature informatique obligatoire (estimand_type, fu_id, population_id, period, world, quality_gate, indicator, unit) et interdit d'additionner ou de diviser des unités incompatibles sans pont déclaré.",
+      "example": "1 000 lots hérités (intensité 10 → 6, soit -40 % en UF) + 1 000 lots induits à 6 = 12 000 (+20 % en UO, +2 000 en UD).",
+      "equation": "UO : I^org_{k,T} = Σ N^eligible · i^attr + R_{k,T} | UD : ΔI^dec_k(a) = I_k(W_a) - I_k(W_0)",
+      "note": "Séparer UO (empreinte organisationnelle), UF (service comparable) et UD (conséquence de décision).",
+      "refs": [
+        "R12",
+        "R13",
+        "R14",
+        "R19",
+        "R20"
+      ],
+      "upstream": [],
+      "downstream": [
+        "B2",
+        "B3",
+        "B4",
+        "B9",
+        "B11",
+        "B12"
+      ],
+      "status": "E0 — proposition non stabilisée",
+      "year": 2026
+    },
+    {
+      "id": "B2",
+      "num": 2,
+      "title": "Frontières, CUR, Cycles & Seuils",
+      "question": "Comment réconcilier totaux fournisseurs et bottom-up CUR, allouer la résilience (DR), fermer les cycles inter-services et capter les seuils non additifs ?",
+      "inputs": "Unités UO/UF/UD (Bloc 1), exports AWS CUR 2.0, totaux d'empreinte fournisseurs, topologie des microservices partagés et capacités des pools.",
+      "outputs": "Inventaire d'infrastructure sans double compte et registre d'événements capacitaires uniques (capacity_event_id) avec terme d'interaction entre services.",
+      "process": "1) Applique une porte de comparabilité entre total fournisseur et bottom-up CUR ; 2) Ferme les appels cycliques inter-services par inversion matricielle (I - U^T)^(-1) b_k ; 3) Alloue la capacité de secours (DR) par valeur de Shapley ; 4) Modélise les achats/réservations de serveurs par une fonction en escalier conjointe N_{p,e}(D).",
+      "example": "Seuil 92/100 : A (+6) et B (+5) donnent 0 isolément mais +40 conjointement. Cycles P↔Q : ρ(U)=0,245, total conservé à 30,000.",
+      "equation": "N_{p,e}(D) = ⌈max(0, L_0 + Σ d_s - C_0)/c_{p,e}⌉ | v_k = (I - U^T)^{-1} b_k",
+      "note": "La somme de services isolés peut manquer un seuil partagé. L’allocation explique un total ; elle ne prouve pas sa causalité.",
+      "refs": [
+        "R01",
+        "R12",
+        "R22",
+        "R23",
+        "R24",
+        "R25"
+      ],
+      "upstream": [
+        "B1",
+        "B4",
+        "B7",
+        "B9"
+      ],
+      "downstream": [
+        "B3",
+        "B4",
+        "B5",
+        "B9",
+        "B11",
+        "B12"
+      ],
+      "status": "E0 — proposition non stabilisée",
+      "year": 2026
+    },
+    {
+      "id": "B3",
+      "num": 3,
+      "title": "Contrefactuel B0 & Équivalence",
+      "question": "Comment verrouiller l'équivalence fonctionnelle sous attrition, abstention/recours humain, SLA (p99/hedging), paradoxe de Simpson et contamination ?",
+      "inputs": "UF et population éligible (Bloc 1), événements de capacité (Bloc 2), matrices de confusion, latences p50/p95/p99, taux d'abstention et d'attrition.",
+      "outputs": "Paire de mondes (IA, B0) fonctionnellement équivalents avec leurs graphes complets d'exécution (succès + échecs + secours humain).",
+      "process": "Verrouille le scénario de référence sans IA (B0) sur la même population éligible P : 1) Porte non compensatoire sur les critères critiques (ex. faux négatifs) ; 2) Inclusion des reprises, du recours humain (A/R/F/X) et du hedging de latence pour respecter le SLA ; 3) Standardisation directe par strate (contre le paradoxe de Simpson) ; 4) Séparation des observations vierges P et contaminées C.",
+      "example": "Score moyen +0,14 pt mais FNR dégradé de 2% à 5% (bloqué). SLA 99% avec hedging inverse -50% en +15%. Simpson : -60% apparent vs -12% standardisé.",
+      "equation": "G_Q = 1{∀(h,j)∈J_crit, L_hj(Δq_hj) ≥ -δ_hj} × 1{H=0} | ΔI_k^std = Σ π_h (I_{IA,k,h} - I_{B0,k,h})",
+      "note": "Même population, qualité, délai et périmètre des reprises humaines. Aucune compensation d’un critère critique par un score moyen. ITT : définir l’assignation et l’estimand ; le shadow replay seul ne corrige ni la composition des lots ni le comportement humain.",
+      "refs": [
+        "R05",
+        "R08",
+        "R11",
+        "R14",
+        "R16",
+        "R19",
+        "R25"
+      ],
+      "upstream": [
+        "B1",
+        "B2"
+      ],
+      "downstream": [
+        "B4",
+        "B5",
+        "B6",
+        "B7",
+        "B8",
+        "B11",
+        "B12"
+      ],
+      "status": "E0 — proposition non stabilisée",
+      "year": 2026
+    },
+    {
+      "id": "B4",
+      "num": 4,
+      "title": "Graphe Événementiel, Temps & Tirages",
+      "question": "Comment modéliser les rétroactions différées, la convergence du pas temporel (aliasing), l'état initial warm-start et l'appariement probabiliste ?",
+      "inputs": "Mondes IA/B0 verrouillés (Bloc 3), événements capacitaires (Bloc 2), rétroactions de demande (Bloc 7) et narratives prospectives.",
+      "outputs": "Journal d'événements physiques horodatés uniques, courbes cumulées multi-horizons et manifeste de tirages probabilistes appariés.",
+      "process": "1) Initialise IA et B0 sur le même snapshot observé (warm-start x_0) ; 2) Déroule le graphe causal (DAG) pas par pas (t → t+1) avec déduplication des collisions via physical_effect_id ; 3) Teste la convergence temporelle (h vs h/2 ≤ 2 %) ; 4) Suit 3 horloges (H_décision, H_service, H_capacité) ; 5) Impose le même scénario exogène conjoint U^s_t et le même identifiant de tirage Monte-Carlo (draw_id) aux deux mondes.",
+      "example": "Backlog hérité (+300) donne +180 en An 1 mais -60 en An 3 (point mort à 30 mois). Pic hebdomadaire (150 > 130) effacé en pas mensuel (-240 au lieu de +60).",
+      "equation": "ΔI_k^(r) = I_{k,IA}(U_c^(r), U_{IA}^(r)) - I_{k,B0}(U_c^(r), U_{B0}^(r)) | E_k(h) ≤ 2 %",
+      "note": "Distinguer chronologie des publications, historique des versions et temps physique simulé. Les cycles du registre ne sont pas des dates.",
+      "refs": [
+        "R04",
+        "R09",
+        "R18",
+        "R21"
+      ],
+      "upstream": [
+        "B1",
+        "B2",
+        "B3",
+        "B5",
+        "B7"
+      ],
+      "downstream": [
+        "B5",
+        "B6",
+        "B7",
+        "B8",
+        "B9",
+        "B10",
+        "B11",
+        "B12"
+      ],
+      "status": "E0 — proposition non stabilisée",
+      "year": 2026
+    },
+    {
+      "id": "B5",
+      "num": 5,
+      "title": "Réponse Électrique & Cloud",
+      "question": "Comment séparer vues physique, contractuelle et causale, borner la localisation cloud latente et router entre SR, LR et noyau spatio-temporel K ?",
+      "inputs": "Profils électriques différentiels horodatés (Blocs 3 et 4), régions cloud (Bloc 2) et trajectoires de demande (Bloc 7).",
+      "outputs": "Vecteur de variations d'activités technologiques électriques (Δa_{τ,g}) prêt pour la caractérisation dans les 4 indicateurs.",
+      "process": "1) Sépare strictement les registres Physique (L_phys), Contractuel (L_contract : PPA/REC) et Causal (L_causal) ; 2) Borne la localisation réelle derrière une région cloud (statuts M/E/B/X) ; 3) Route chaque segment de charge vers le régime court terme (SR), long terme (LR) ou re-dispatch (MOD) autour du point de coupure τ* sans chevauchement ; 4) Active le noyau spatio-temporel K si le stockage couple les heures.",
+      "example": "10 kWh : 0 kg (PPA) / 3 kg (Physique) / +6 kg (Causal). Batterie couplée (-10/+10 kWh) : gain scalaire fictif de -5 kg ramené à 0 kg.",
+      "equation": "Δa_{τ,g} = Σ K_{(τ,g)←(t,z)} Δq_{t,z} | ΔI^el_k = Σ_{t<τ*} ΔE^SR r^SR + Σ_{y≥τ*} ΔE^LR r^LR + I^cap_k",
+      "note": "Régimes SR/LR/MOD conditionnels au changement étudié. Une partition temporelle seule ne suffit pas à identifier la réponse marginale.",
+      "refs": [
+        "R02",
+        "R09",
+        "R23"
+      ],
+      "upstream": [
+        "B2",
+        "B3",
+        "B4",
+        "B7"
+      ],
+      "downstream": [
+        "B6",
+        "B7",
+        "B8",
+        "B9",
+        "B10",
+        "B11"
+      ],
+      "status": "E0 — proposition non stabilisée",
+      "year": 2026
+    },
+    {
+      "id": "B6",
+      "num": 6,
+      "title": "Substitution Réelle & Dette Backlog",
+      "question": "Comment estimer le taux de déplacement réel sans double compte parent-feuilles, sans créditer la file d'attente (backlog) et en standardisant sur P* ?",
+      "inputs": "Mondes équivalents (Bloc 3), événements physiques uniques (Bloc 4) et registres électriques (Bloc 5).",
+      "outputs": "Quantité d'activité de référence durablement supprimée, dette de backlog bornée et bilan brut–net (G+, G-, N) hors registre des claims.",
+      "process": "1) Calcule le taux de réalisation ρ_s comme produit de 5 passages conditionnels emboîtés dans la même cohorte (Éligible E → Exposé A → Succès S → Qualité Q → Supprimé D) ; 2) Standardise ρ sur la distribution de la population cible P* ; 3) Impose une partition exclusive entre processus parent et feuilles physiques ; 4) Maintient tout dossier non traité à la clôture H_d comme dette différée (F) jusqu'à H_f.",
+      "example": "Pilote sur-représentant les cas faciles (80/20) affiche ρ = 76 % alors que la standardisation cible P* donne 34 % (surestimation ×2,24).",
+      "equation": "ρ_s = P(A|E,s)P(S|A,E,s)P(Q|S,A,E,s)P(D|Q,S,A,E,s) | ρ_{P*} = Σ w_s^{P*} ρ_s",
+      "note": "Un travail reporté reste une dette. La substitution 1:1 est une sensibilité, pas une observation.",
+      "refs": [
+        "R03",
+        "R05",
+        "R18",
+        "R21"
+      ],
+      "upstream": [
+        "B3",
+        "B4",
+        "B5"
+      ],
+      "downstream": [
+        "B7",
+        "B8",
+        "B9",
+        "B10",
+        "B11",
+        "B12"
+      ],
+      "status": "E0 — proposition non stabilisée",
+      "year": 2026
+    },
+    {
+      "id": "B7",
+      "num": 7,
+      "title": "Diffusion, Rebond & Devenir",
+      "question": "Comment séparer rattrapage du backlog (C), demande induite (J), qualité (Q) et exogène (X), suivre les jetons libérés et éviter l'élasticité linéaire ?",
+      "inputs": "Cohortes et backlog du Bloc 6, seuils capacitaires (Bloc 4) et régimes électriques (Bloc 5).",
+      "outputs": "Trajectoires de diffusion, ratios d'absorption (RB_ind, CA, AA) par indicateur et enveloppe d'impact des ressources libérées non encore retirées.",
+      "process": "1) Modélise la demande induite par paliers de cohortes d'adoption et publie 3 formes hors du domaine observé (saturation, linéaire, accélération bornée) ; 2) Partitionne tout volume additionnel entre rattrapage du backlog (C, relié par view_of au Bloc 6), demande induite (J), enrichissement qualité (Q) et exogène (X) ; 3) Suit les ressources libérées par analyse de survie à risques concurrents (RET, RED, EXT, SCL, OPEN).",
+      "example": "S=100, C=40, J=30, Q=20, X=10 → RB_ind = 50 %, CA = 40 %, AA = 90 % (et non 140 % par double compte de C).",
+      "equation": "ΔN_t = C_t + J_t + Q_t + X_t | RB^ind_k = (I_k(J)+I_k(Q))/S_k | CA_k = I_k(C)/S_k",
+      "note": "Séparer rattrapage, demande induite, enrichissement et croissance exogène. La causalité exige un protocole d’identification. released_resource_token est un identifiant de provenance proposé, pas une preuve causale. Le skill rebound reste une hypothèse à définir et mesurer sans double compte avec Q_INT/J_IND.",
+      "refs": [
+        "R03",
+        "R18",
+        "R21"
+      ],
+      "upstream": [
+        "B3",
+        "B4",
+        "B5",
+        "B6"
+      ],
+      "downstream": [
+        "B2",
+        "B4",
+        "B8",
+        "B9",
+        "B10",
+        "B11",
+        "B12"
+      ],
+      "status": "E0 — proposition non stabilisée",
+      "year": 2026
+    },
+    {
+      "id": "B8",
+      "num": 8,
+      "title": "Caractérisation & Porte Anti-Mosaïque",
+      "question": "Comment conserver l'intégrité du scénario s sur GWP, WU, ADPe et PE, borner les résidus lacunaires et interdire la recombinaison opportuniste ?",
+      "inputs": "Activités physiques uniques (Bloc 6), partition C/J/Q/X et trajectoires de diffusion (Bloc 7), régimes électriques (Bloc 5) et cohortes matérielles (Bloc 9).",
+      "outputs": "Vecteurs d'impacts conjoints (GWP, WU, ADPe, PE) par scenario_id, tenseur mécanistique fermé et statut d'admissibilité multicritère.",
+      "process": "1) Applique un paquet LCIA versionné (EF 3.1 / AWARE / ADP / PE) sur l'inventaire commun avec masques M/E/B/X et résidus bornés R_k ; 2) Construit le tenseur additif (Mécanisme × Flux × Catégorie) sans jamais copier le ratio GWP sur les autres indicateurs ; 3) Impose l'indivisibilité du tuple de scénario s (Porte Anti-Mosaïque) ; 4) Évalue la dominance par ordre partiel non compensatoire sous garde-fous absolus.",
+      "example": "Ratio carbone (60 %) masque deux backfires sur WU (115 %) et ADPe (120 %). Mosaïque (-20,-5,-1,-12) rejetée.",
+      "equation": "s = (f_s, J_s, E_s^cap, R_s^elec, L_s, T_s, V_s^LCIA) | I_{m,k} = Σ Δx_{e,m} CF_{e,k}",
+      "note": "Même scénario et inventaire pour toutes les catégories. EF 3.1 + CED doit être explicitement déclaré comme paquet composite.",
+      "refs": [
+        "R07",
+        "R09",
+        "R10",
+        "R12",
+        "R13",
+        "R15",
+        "R24"
+      ],
+      "upstream": [
+        "B4",
+        "B5",
+        "B6",
+        "B7",
+        "B9"
+      ],
+      "downstream": [
+        "B9",
+        "B10",
+        "B11",
+        "B12"
+      ],
+      "status": "E0 — proposition non stabilisée",
+      "year": 2026
+    },
+    {
+      "id": "B9",
+      "num": 9,
+      "title": "Substitution Matérielle & Retour",
+      "question": "À quelles conditions le remplacement d'une génération de serveur/GPU réduit-il les 4 impacts sur le nœud complet (hôte+GPU+HBM) et son devenir ?",
+      "inputs": "UF métier (Bloc 1), événements d'actifs (Bloc 2), devenir RET/RED/EXT/SCL (Bloc 7) et facteurs multicritères (Bloc 8).",
+      "outputs": "Impacts matériels incorporés, de coexistence et de fin de vie par cohorte, ainsi que le vecteur des temps de retour τ_k.",
+      "process": "Rejouer les seuils physiques de capacité et les cohortes de remplacement. Inclure nœud complet, coexistence et devenir des actifs. Séparer inventaire matériel attributionnel et événements conséquentiels ; publier bornes quand la preuve est insuffisante.",
+      "example": "Incorporé (+120, +80, +9, +100) vs économie mensuelle (30, 10, 0, 25) → retour en 4 mois (GWP/PE), 8 mois (WU), jamais pour ADPe (+9).",
+      "equation": "ΔI_k(T) = ΔI^upfront_k + ∫_0^T q(t)[i_{n,k}(t) - i_{o,k}(t)]dt + I^overlap_k(T) + I^fate_k(T)",
+      "note": "La règle C3–C4 est une convention prudente proposée, pas une loi générale de cLCA. Des marchés agrégés peuvent avoir un effet marginal sans commande traçable à un client.",
+      "refs": [
+        "R01",
+        "R09",
+        "R12",
+        "R15",
+        "R24"
+      ],
+      "upstream": [
+        "B1",
+        "B2",
+        "B4",
+        "B7",
+        "B8"
+      ],
+      "downstream": [
+        "B2",
+        "B8",
+        "B10",
+        "B11",
+        "B12"
+      ],
+      "status": "E0 — proposition non stabilisée",
+      "year": 2026
+    },
+    {
+      "id": "B10",
+      "num": 10,
+      "title": "Budget Métrologique Apparié",
+      "question": "Comment construire l'incertitude de ΔE = E*_IA - E*_B0 en séparant erreurs communes (covariance) et biais asymétriques de fenêtre ou de repos ?",
+      "inputs": "Traces de puissance (PDU, machine, CPU/GPU, outils logiciels), horloges d'événements (Bloc 4) et vecteurs d'impacts (Bloc 8).",
+      "outputs": "Intervalles d'incertitude métrologiques et distributions Monte-Carlo appariées (2DMC) pour chaque indicateur.",
+      "process": "Calibrer la mesure énergétique, synchroniser les fenêtres et caractériser les erreurs communes/spécifiques. Séparer les branches structurelles sans poids et la Monte-Carlo interne appariée IA/B0. Estimer la sensibilité en tenant compte des dépendances.",
+      "example": "B0=100 Wh, IA=95 Wh (ΔE = -5 Wh). Biais commun +8% conserve -5,4 Wh ; fenêtre IA fermée 12 Wh trop tard inverse en +6,6 Wh.",
+      "equation": "u²(ΔE) = u²(E*_IA) + u²(E*_B0) - 2 Cov(E*_IA, E*_B0)",
+      "note": "Les bornes sommées du CSV sont des enveloppes arithmétiques, pas des intervalles de confiance. Conserver les covariances dans la simulation.",
+      "refs": [
+        "R04",
+        "R06",
+        "R08",
+        "R11",
+        "R17",
+        "R22",
+        "R25"
+      ],
+      "upstream": [
+        "B1",
+        "B3",
+        "B4",
+        "B5",
+        "B8",
+        "B9"
+      ],
+      "downstream": [
+        "B11",
+        "B12"
+      ],
+      "status": "E0 — proposition non stabilisée",
+      "year": 2026
+    },
+    {
+      "id": "B11",
+      "num": 11,
+      "title": "Portefeuille : Volume, Mix & Intensité",
+      "question": "Comment séparer dans l'évolution d'un portefeuille l'effet du volume total Q, de la composition p et des intensités unitaires i ?",
+      "inputs": "Catalogues des UF par service (Bloc 1), volumes par période (Blocs 3 à 7), impacts multicritères par service (Bloc 8) et distributions appariées (Bloc 10).",
+      "outputs": "Double verdict de portefeuille par catégorie : 1) Réduction d'empreinte absolue ; 2) Amélioration de l'efficacité standardisée.",
+      "process": "Décompose sans résidu la variation d'impact du portefeuille ΔI_k en trois effets : Volume total rendu (φ_Q), Composition du portefeuille de services (φ_p) et Intensités unitaires (φ_i), et publie conjointement la variation absolue et l'intensité standardisée à composition de référence fixe p*.",
+      "example": "I_0 = 1010 → I_1 = 220 (-78,2 %) alors que chaque service se dégrade de +10 % en intensité (+60,5 intensité, -850,5 composition).",
+      "equation": "I_{k,t} = Q_t Σ p_{s,t} i_{s,k,t} | ΔI_k = φ_{Q,k} + φ_{p,k} + φ_{i,k}",
+      "note": "La décomposition descriptive volume/mix/intensité reste utile. Shapley n’est pas invalidé en soi par les scénarios mosaïques ; ne pas confondre attribution explicative et causalité. Pareto, incertitude épistémique, garde-fous et SMAA sont quatre objets distincts.",
+      "refs": [
+        "R04",
+        "R17",
+        "R20"
+      ],
+      "upstream": [
+        "B1",
+        "B2",
+        "B3",
+        "B6",
+        "B7",
+        "B8",
+        "B9",
+        "B10"
+      ],
+      "downstream": [
+        "B12"
+      ],
+      "status": "E0 — proposition non stabilisée",
+      "year": 2026
+    },
+    {
+      "id": "B12",
+      "num": 12,
+      "title": "Assurance A0–A3 & Mutations",
+      "question": "Comment prouver que le résultat net ne provient pas d'erreurs intermédiaires qui s'annulent tout en protégeant le secret bancaire ?",
+      "inputs": "Matrice complète des transformations, données, codes et résultats intermédiaires des Blocs 1 à 11.",
+      "outputs": "Certification ou déclassement automatique de la revendication (niveaux C0 à C5) et génération des paquets de reproductibilité Public et Protégé.",
+      "process": "Soumet chaque revendication (claim_id) à 4 portes conjonctives : A0 (invariants de structure et conservation à ±1 %), A1 (12 cas analytiques étalons à vérité connue), A2 (recalcul indépendant des 5 noyaux critiques par une seconde implémentation) et A3 (validation terrain et revue indépendante ISO 14071 sur paquet protégé), complétés par l'injection de fautes (score de mutation M_b).",
+      "example": "Cas vrai : 70 (op) + 30 (incorp) - 30 (évité) = 70. Pipeline omettant incorporé et évité rend aussi 70 mais échoue sur A0/A1/A2.",
+      "equation": "G_c = ∧_{t∈T_c} pass(t) | M_b = N_{b,détectées} / N_{b,activées} (seuil pilote 95 %)",
+      "note": "Le succès des tests logiciels ne valide ni le modèle causal ni les facteurs LCIA. Réplication externe et confrontation aux observations restent nécessaires.",
+      "refs": [
+        "R13",
+        "R14",
+        "R22"
+      ],
+      "upstream": [
+        "B1",
+        "B2",
+        "B3",
+        "B4",
+        "B5",
+        "B6",
+        "B7",
+        "B8",
+        "B9",
+        "B10",
+        "B11"
+      ],
+      "downstream": [],
+      "status": "E0 — proposition non stabilisée",
+      "year": 2026
+    }
+  ],
+  "papers": [
+    {
+      "id": "P0",
+      "title": "When Cloud Cost Fails as a Carbon Proxy: Organisational LCA Evidence of Composition-Mediated Non-Linearity",
+      "status": "Manuscrit en relecture finale, en préparation pour soumission.",
+      "basis": "Note documentaire de thèse",
+      "question": "RQ9 (tracker) / RQ2 (roadmap) : le coût sélectionne-t-il les mêmes priorités que l'indicateur environnemental, et pourquoi ne le fait-il pas ?",
+      "innovation": "C2 : découplage FinOps/GreenOps démontré empiriquement. Formulation récente : l'échec du proxy est médié par la composition du portefeuille.",
+      "existing": "Tapio (2005) ; Mytton (2021) ; SPRUCE 1.0 ; comptabilité spend-based.",
+      "test": "Tableau unique de périmètres et régénération depuis un jeu figé ; correction EPIS ; décision sur la venue.",
+      "risk": "R8 (juridique) ; R3 (délai de relecture).",
+      "blocks": [
+        1,
+        2,
+        11
+      ],
+      "depends": [],
+      "optional": [],
+      "stage": "Priorité 1 · axe A",
+      "integration": "Corriger EPIS ; figer le périmètre et régénérer les chiffres ; lever R8.",
+      "refs": [
+        "R12"
+      ],
+      "year": 2026
+    },
+    {
+      "id": "P1",
+      "title": "How Much Do Process-Based Estimates Miss? Hybrid IO-LCA of AI Accelerator Supply Chains",
+      "status": "Manuscrit complet en cours de finalisation.",
+      "basis": "Note documentaire de thèse",
+      "question": "RQ10 : ampleur de la troncature de la chaîne d'approvisionnement du matériel IA ; RQ11 : biais d'allocation physique vs monétaire.",
+      "innovation": "Framework hybrid IO-LCA open-source appliqué à l'infrastructure IA.",
+      "existing": "Boyd (2012), Williams (2004), Lenzen (2000, 2009), Suh (2004), Schneider et al. (2025).",
+      "test": "Validation superviseur ; suppression des doubles comptages ; publication des scripts.",
+      "risk": "Validation du pivot ; R1 (ecoinvent) ; R6 (incomparabilité IO/process).",
+      "blocks": [
+        2,
+        8,
+        9,
+        10
+      ],
+      "depends": [],
+      "optional": [],
+      "stage": "Priorité 2 · axe B",
+      "integration": "Auditer doubles comptes et allocations ; clarifier le pivot.",
+      "refs": [
+        "R01",
+        "R09"
+      ],
+      "year": 2026
+    },
+    {
+      "id": "P2",
+      "title": "Automated Scenario Generation for Consequential LCA via Temporal Knowledge Graphs: Application to Digital Systems",
+      "status": "Brouillon méthodologique avancé.",
+      "basis": "Note documentaire de thèse",
+      "question": "RQ8 (automatisation des scénarios) + RQ2 (frontières dynamiques).",
+      "innovation": "Formalisme de graphe causal compilant les scénarios par énumération de chemins contraints ; validation SHACL.",
+      "existing": "premise, Brightway2, superstructure ; travaux de LCA prospective.",
+      "test": "Critères de significativité des frontières.",
+      "risk": "Aucun blocage technique déclaré.",
+      "blocks": [],
+      "depends": [],
+      "optional": [],
+      "stage": "Alternative existante à arbitrer",
+      "integration": "Auditer reproductibilité et antériorité.",
+      "refs": [],
+      "year": 2026
+    },
+    {
+      "id": "P3",
+      "title": "Cadre d'analyse d'incertitude et de sensibilité (P3)",
+      "status": "Cadre d'analyse d'incertitude et de sensibilité en préparation.",
+      "basis": "Note documentaire de thèse",
+      "question": "RQ5 : propager l'incertitude structurelle et épistémique dans la cLCA des systèmes numériques.",
+      "innovation": "Application d'une analyse de sensibilité globale corrélée (SHAP) à l'ACV de l'infrastructure IA.",
+      "existing": "Kim et al. (2025), Kaddoura et al. (2025), Cook et al. (2025).",
+      "test": "Implémenter les indices de Sobol ; ACV dynamique.",
+      "risk": "Dépend de données P1 et P6.",
+      "blocks": [
+        10,
+        12
+      ],
+      "depends": [
+        "P1",
+        "P6"
+      ],
+      "optional": [],
+      "stage": "Méthode transversale",
+      "integration": "Intégrer la robustesse dans P0/P1/P7.",
+      "refs": [
+        "R06",
+        "R08"
+      ],
+      "year": 2026
+    },
+    {
+      "id": "P4",
+      "title": "Rebound Effects and Market Mechanisms in Consequential LCA of AI-Based Banking Services",
+      "status": "Exploration méthodologique en cours.",
+      "basis": "Note documentaire de thèse",
+      "question": "RQ3 (rebond) + RQ6 (marchés).",
+      "innovation": "Cadre de rebond pour le passage à l'échelle cloud.",
+      "existing": "Mhlanga (2025), Do (2026), Nguyen et al. (2025).",
+      "test": "Élasticité de la demande et élasticité prix pour marchés numériques.",
+      "risk": "Effort d'implémentation.",
+      "blocks": [
+        4,
+        6,
+        7
+      ],
+      "depends": [
+        "P2"
+      ],
+      "optional": [
+        "P0"
+      ],
+      "stage": "Prolongement conditionnel",
+      "integration": "Conserver comme prolongement.",
+      "refs": [
+        "R03",
+        "R05"
+      ],
+      "year": 2026
+    },
+    {
+      "id": "P5",
+      "title": "A Decision-Centric Consequential Life Cycle Assessment Framework for Digital Systems: Application to AI in Banking",
+      "status": "Cadre intégrateur global (en cours d'élaboration).",
+      "basis": "Note documentaire de thèse",
+      "question": "Synthèse de thèse (RQ1–RQ9).",
+      "innovation": "Pipeline en 7 couches (décision → TKG → scénarios → ICV automatisé → multi-indicateurs → incertitude → découplage FinOps–GreenOps).",
+      "existing": "Revue à réaliser.",
+      "test": "Intégration du matériau cLCA, résultats P1.",
+      "risk": "Report explicite à 2028 ; dépendances amont non achevées.",
+      "blocks": [
+        8,
+        9,
+        11
+      ],
+      "depends": [
+        "P0",
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P6",
+        "P7"
+      ],
+      "optional": [],
+      "stage": "Reporté à 2028",
+      "integration": "Réserver la synthèse à 2028.",
+      "refs": [
+        "R07",
+        "R10",
+        "R13"
+      ],
+      "year": 2026
+    },
+    {
+      "id": "P6",
+      "title": "Proxy-Based Environmental Impact Assessment of Agentic LLM Workflows: A Workflow-Level Life Cycle Approach Under Constrained Observability",
+      "status": "Étude empirique et cadrage méthodologique.",
+      "basis": "Note documentaire de thèse",
+      "question": "RQ6 : empreinte énergétique empirique des workflows agentiques et identifiabilité depuis des traces incomplètes.",
+      "innovation": "Mesure empirique, unité fonctionnelle au niveau du workflow, prise en compte du cache, carte d'identifiabilité.",
+      "existing": "FUEL (Wu 2025), Poddar (2025), Caravaca (2025), Krupp (2025).",
+      "test": "Réviser la chaîne énergie/cache ; connecter Brightway au stub GreenOps.",
+      "risk": "Points de traçabilité à consolider.",
+      "blocks": [
+        3,
+        10,
+        12
+      ],
+      "depends": [
+        "P7"
+      ],
+      "optional": [],
+      "stage": "Remédiation avant publication",
+      "integration": "Réviser la chaîne énergie/cache.",
+      "refs": [
+        "R11",
+        "R12"
+      ],
+      "year": 2026
+    },
+    {
+      "id": "P7",
+      "title": "Estimating the Environmental Footprint of Managed AI Services: A Hybrid Method Reconciling Theoretical Models and Empirical Benchmarks",
+      "status": "Manuscrit complet en cours de consolidation.",
+      "basis": "Note documentaire de thèse",
+      "question": "Comment produire des estimations bornées d'énergie et de carbone d'un service d'IA managé à partir des seules données de facturation ?",
+      "innovation": "Méthode en 4 niveaux (fournisseur, tokens, crédits, dépense) ; distinction du cache ; score SCI for AI sur portefeuille réel.",
+      "existing": "EcoLogits, Oviedo et al., ML.ENERGY Benchmark v3, Cloud Carbon Footprint.",
+      "test": "Harmonisation des unités et frontières ; consolidation des chiffres.",
+      "risk": "R8 (données de facturation sensibles).",
+      "blocks": [],
+      "depends": [],
+      "optional": [],
+      "stage": "Priorité 1 · axe C",
+      "integration": "Consolider unités, frontières et chiffres ; lever R8.",
+      "refs": [],
+      "year": 2026
+    },
+    {
+      "id": "ATL-N1",
+      "title": "Comparabilité des politiques IA : unités, qualité et biais de sélection",
+      "status": "Piste de recherche en réserve.",
+      "basis": "Proposition de l'atlas",
+      "question": "Comment obtenir une comparaison IA/B0 traçable, multicritère et réfutable ?",
+      "innovation": "Combiner contrat de qualité, registre d’effets uniques, appariement et validation par défauts injectés.",
+      "existing": "ITU L.1801, ACV de services.",
+      "test": "Pilote instrumenté, baseline attributionnelle.",
+      "depends": [],
+      "optional": [],
+      "blocks": [
+        1,
+        3,
+        8,
+        12
+      ],
+      "stage": "Après deux soumissions",
+      "refs": [
+        "R08",
+        "R12",
+        "R13",
+        "R14",
+        "R16",
+        "R19"
+      ],
+      "risk": "Démontrer un gain de validité décisionnelle.",
+      "year": 2027
+    },
+    {
+      "id": "ATL-N2",
+      "title": "Adoption d’IA : substitution, demande induite et seuils de capacité",
+      "status": "Piste de recherche en réserve.",
+      "basis": "Proposition de l'atlas",
+      "question": "Dans quelles conditions le gain unitaire réduit-il l’impact net de l’adoption ?",
+      "innovation": "Étude longitudinale avec B0 crédible, demandes standardisées, backlog et capacité discrète.",
+      "existing": "Rebond et substitution établis.",
+      "test": "Protocole préenregistré, groupes comparables.",
+      "depends": [],
+      "optional": [],
+      "blocks": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10
+      ],
+      "stage": "Après deux soumissions",
+      "refs": [
+        "R02",
+        "R03",
+        "R05",
+        "R09",
+        "R18",
+        "R21"
+      ],
+      "risk": "Opacité hyperscaler et biais d'adoption.",
+      "year": 2028
+    },
+    {
+      "id": "ATL-N3",
+      "title": "Décision de portefeuille : robustesse, arbitrages et auditabilité",
+      "status": "Piste de recherche en réserve.",
+      "basis": "Proposition de l'atlas",
+      "question": "Quelles politiques restent admissibles selon les branches et les capacités partagées ?",
+      "innovation": "Certificat de décision et généralisation multi-services.",
+      "existing": "Robustesse par scénarios et multicritère.",
+      "test": "Comparer somme autonome, allocation et recalcul conjoint.",
+      "depends": [],
+      "optional": [],
+      "blocks": [
+        8,
+        10,
+        11,
+        12
+      ],
+      "stage": "Après deux soumissions",
+      "refs": [
+        "R04",
+        "R06",
+        "R10",
+        "R17"
+      ],
+      "risk": "Seuils de gouvernance à approuver.",
+      "year": 2028
+    },
+    {
+      "id": "ATL-N4",
+      "title": "Des traces cloud aux inventaires physiques : réconciliation et limites",
+      "status": "Piste de recherche en réserve.",
+      "basis": "Proposition de l'atlas",
+      "question": "Quels effets physiques peut-on identifier à partir de traces applicatives et d'usage cloud ?",
+      "innovation": "Schéma de provenance, réconciliation et calibration entre événements, ressources et inventaires.",
+      "existing": "OpenTelemetry/CUR ; Alissa et Elsworth.",
+      "test": "Banc instrumenté, référence énergétique indépendante.",
+      "depends": [],
+      "optional": [],
+      "blocks": [
+        2,
+        5,
+        9,
+        10,
+        12
+      ],
+      "stage": "Après deux soumissions",
+      "refs": [
+        "R02",
+        "R22",
+        "R23",
+        "R24",
+        "R25"
+      ],
+      "risk": "Charge de travail élevée.",
+      "year": 2027
+    },
+    {
+      "id": "ATL-N5",
+      "title": "Validation bancaire et transfert : étude longitudinale indépendante",
+      "status": "Piste de recherche en réserve.",
+      "basis": "Proposition de l'atlas",
+      "question": "Le protocole conserve-t-il sa validité et son utilité sur un autre service ?",
+      "innovation": "Validation externe/interne hors échantillon et analyse de transférabilité.",
+      "existing": "Réapplication de pilote.",
+      "test": "Accès données autorisé, workflow et oracle confirmés.",
+      "depends": [],
+      "optional": [],
+      "blocks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "stage": "Après deux soumissions",
+      "refs": [
+        "R14",
+        "R18",
+        "R20"
+      ],
+      "risk": "Redondance potentielle.",
+      "year": 2028
+    }
+  ],
+  "researchWatch": [
+    {
+      "id": "W01",
+      "title": "SPRUCE 1.0 — Enrichissement Open-Source AWS CUR & BoaviztAPI",
+      "authors": "Julien Nioche (DigitalPebble)",
+      "year": 2026,
+      "ref": "nioche2026spruce",
+      "url": "https://github.com/DigitalPebble/spruce",
+      "papers": [
+        "P0"
+      ],
+      "blocks": [
+        1,
+        2,
+        11
+      ],
+      "priority": "1 · Maintenant",
+      "status": "Analysé · Positionnement P0",
+      "question": "Comment positionner GreenOps face aux pipelines open-source qui couplent déjà AWS CUR et BoaviztAPI ?",
+      "reuse": "Citer SPRUCE 1.0 comme preuve de convergence industrielle sur le couplage CUR + BoaviztAPI, et différencier P0 par l'analyse économétrique du découplage FinOps/GreenOps (RIR, élasticité inter/intra-compte) et l'intégration de la télémétrie CPU réelle.",
+      "limit": "Pipeline purement attributionnel sans modélisation conséquentielle ni test de validité du proxy monétaire."
+    },
+    {
+      "id": "W02",
+      "title": "CLEER — Closed-Model Latent Energy Estimation Range",
+      "authors": "Nidhal Jegham, Chan Young Koh, Boris Gamazaychikov, Sasha Luccioni",
+      "year": 2026,
+      "ref": "R26",
+      "url": "https://reports.sustainableaigroup.com/CLEER-Tech-Report/",
+      "papers": [
+        "P6",
+        "P7"
+      ],
+      "blocks": [
+        2,
+        10
+      ],
+      "priority": "1 · Maintenant",
+      "status": "À comparer sur lot figé",
+      "question": "Comment borner l'énergie des modèles propriétaires fermés (Bedrock / Anthropic / Azure) sans télémétrie matérielle directe ?",
+      "reuse": "Construire une table de comparaison entre les plages CLEER, EcoLogits et la méthode hybride à 4 niveaux de P7 sur un périmètre identique de tokens facturés.",
+      "limit": "Rapport technique (CLEER-Text-0926) ; couvre l'énergie des accélérateurs en inférence mais pas l'ACV multicritère complète ni le comportement du cache KV."
+    },
+    {
+      "id": "W03",
+      "title": "Measuring the Environmental Impact of Delivering AI at Google Scale",
+      "authors": "Cooper Elsworth, Keguo Huang, David Patterson, Ian Schneider, et al.",
+      "year": 2025,
+      "ref": "R25",
+      "url": "https://services.google.com/fh/files/misc/measuring_the_environmental_impact_of_delivering_ai_at_google_scale.pdf",
+      "papers": [
+        "P6",
+        "P7"
+      ],
+      "blocks": [
+        2,
+        3,
+        10
+      ],
+      "priority": "1 · Maintenant",
+      "status": "Intégré · Cadrage frontières",
+      "question": "Quelle part représentent les hôtes, la capacité inactive (idle) et le PUE datacenter face au seul calcul de l'accélérateur ?",
+      "reuse": "Ancrer les frontières système de P7 et du Bloc B2 en montrant que la mesure restreinte au GPU sous-estime l'empreinte opérationnelle complète du service d'inférence.",
+      "limit": "Mesure attributionnelle interne d'un hyperscaler ; ne fournit pas l'identification causale d'une décision d'adoption cliente."
+    },
+    {
+      "id": "W04",
+      "title": "More than Carbon: Cradle-to-Grave Environmental Impacts of GenAI Training on the NVIDIA A100 GPU",
+      "authors": "Sophia Falk, David Ekchajzer, Thibault Pirson, Sasha Luccioni, et al.",
+      "year": 2026,
+      "ref": "R15",
+      "url": "https://doi.org/10.1016/j.eiar.2026.108525",
+      "papers": [
+        "P1",
+        "P5"
+      ],
+      "blocks": [
+        8,
+        9
+      ],
+      "priority": "1 · Maintenant",
+      "status": "Intégré · Données Tier 1 P1",
+      "question": "Quels sont les impacts matériels multicritères (au-delà du carbone : ADPe, eau, énergie) d'un accélérateur IA basés sur un démontage physique ?",
+      "reuse": "Utiliser les données primaires Tier 1 comme socle processus dans l'hybridation Process–MRIO (EXIOBASE 3) de l'article P1 et paramétrer le Bloc B9.",
+      "limit": "L'effet sur l'épuisement abiotique (ADPe) dépend du scénario de remplacement et de l'horizon temporel."
+    },
+    {
+      "id": "W05",
+      "title": "An Introduction to Life-Cycle Emissions of Artificial Intelligence Hardware",
+      "authors": "Ian Schneider, Hui Xu, Stephan Benecke, David Patterson, et al.",
+      "year": 2025,
+      "ref": "schneider2025lifecycle",
+      "url": "https://doi.org/10.1109/mm.2025.3592568",
+      "papers": [
+        "P1"
+      ],
+      "blocks": [
+        2,
+        9
+      ],
+      "priority": "1 · Maintenant",
+      "status": "Analysé · Comparaison P1",
+      "question": "Quelle est la part des émissions incorporées (embodied) des accélérateurs IA selon les estimations basées sur les processus industriels ?",
+      "reuse": "Servir de référence d'inventaire processus (TPU/GPU) pour quantifier l'erreur de troncature amont révélée par l'approche hybride IO-LCA dans P1.",
+      "limit": "Approche processus soumise à la troncature des chaînes d'approvisionnement de rang supérieur (services, chimie fine, équipements de fonderie)."
+    },
+    {
+      "id": "W06",
+      "title": "Environmental Impact of Machinery and Equipment: Comparison between EXIOBASE, National EE-IO Models, and Ecoinvent",
+      "authors": "Yiwen Liu, Meng Jiang, Edgar G. Hertwich",
+      "year": 2025,
+      "ref": "liu2025environmental",
+      "url": "https://doi.org/10.1021/acs.est.5c08581",
+      "papers": [
+        "P1"
+      ],
+      "blocks": [
+        2,
+        8,
+        9
+      ],
+      "priority": "2 · Consolidation",
+      "status": "À mobiliser pour l'audit P1",
+      "question": "Quels biais d'agrégation et d'allocation apparaissent lorsqu'on compare EXIOBASE, les modèles EE-IO nationaux et ecoinvent sur les biens d'équipement ?",
+      "reuse": "Appuyer la discussion méthodologique de P1 (réserves du CSI sur la non-généricité des multiplicateurs hybrides et les biais d'homogénéité sectorielle).",
+      "limit": "Nécessite d'auditer finement les doubles comptes entre couches physiques et monétaires (Lenzen 2000, 2009)."
+    },
+    {
+      "id": "W07",
+      "title": "Marginal and Average Considerations in LCA and Their Role for Defining Emission Factors",
+      "authors": "Reinout Heijungs",
+      "year": 2025,
+      "ref": "heijungs2025marginal",
+      "url": "https://doi.org/10.1007/s11367-025-02430-1",
+      "papers": [
+        "P1",
+        "P2",
+        "P5"
+      ],
+      "blocks": [
+        1,
+        5
+      ],
+      "priority": "2 · Consolidation",
+      "status": "Intégré · Clarification théorique",
+      "question": "Dans quelles conditions mathématiques et décisionnelles doit-on utiliser des facteurs marginaux plutôt que moyens en ACV ?",
+      "reuse": "Formaliser la distinction entre les trois unités du Bloc B1 (UO attributionnel moyen vs UD conséquentiel marginal) et justifier le routage électrique du Bloc B5.",
+      "limit": "Cadre théorique général ; ne résout pas l'opacité empirique de la localisation physique des instances Cloud."
+    },
+    {
+      "id": "W08",
+      "title": "Average vs. Marginal & Location- vs. Market-Based Carbon Intensity Signals in Cloud Optimizations",
+      "authors": "Thanathorn Sukprasert, Diptyaroop Maji, Noman Bashir, David Irwin, Prashant Shenoy",
+      "year": 2024,
+      "ref": "sukprasert2024implications",
+      "url": "https://doi.org/10.1145/3632775.3661953",
+      "papers": [
+        "P0",
+        "P2",
+        "P5"
+      ],
+      "blocks": [
+        5
+      ],
+      "priority": "2 · Consolidation",
+      "status": "Analysé · Bloc B5",
+      "question": "Pourquoi les signaux d'intensité carbone moyens ou contractuels (market-based) peuvent-ils créer un « mirage vert » lors de l'ordonnancement de charges Cloud ?",
+      "reuse": "Justifier la séparation stricte des trois registres électriques dans le Bloc B5 : Physique (L_phys), Contractuel (L_contract : PPA/REC) et Causal (L_causal).",
+      "limit": "Centré sur le court terme opérationnel (workload shifting) sans couplage avec l'expansion de capacité long terme (LR) ni l'eau (AWARE)."
+    },
+    {
+      "id": "W09",
+      "title": "Unveiling Environmental Impacts of LLM Serving (FUEL) & Tokenomics in Agentic Software Engineering",
+      "authors": "Yanran Wu et al. (ACL 2025) ; Mohamad Salim et al. (2026) ; Arihant Tripathy et al. (SWEnergy 2025)",
+      "year": 2026,
+      "ref": "wu2025fuel",
+      "url": "https://arxiv.org/abs/2601.14470",
+      "papers": [
+        "P6",
+        "P7"
+      ],
+      "blocks": [
+        1,
+        3,
+        10
+      ],
+      "priority": "1 · Maintenant",
+      "status": "En cours · Remédiation P6",
+      "question": "Où sont consommés les tokens et les joules dans les workflows d'ingénierie logicielle agentique (multi-tours, appels d'outils, boucles d'erreur, cache KV) ?",
+      "reuse": "Appuyer l'unité fonctionnelle au niveau du workflow complet (Bloc B3) incluant les itérations de reprise, et calibrer l'impact de la réutilisation du cache (`cache_read` vs `cache_write`).",
+      "limit": "Nécessite de maintenir des bornes d'ignorance non probabilistes lorsque le taux de réutilisation physique du cache matériel (paramètre h) n'est pas directement observé."
+    },
+    {
+      "id": "W10",
+      "title": "Attributional and Consequential LCA: Integrating System Boundaries and Machine Learning",
+      "authors": "Vira Valasara, Byeongchan Ahn, Wangyun Won",
+      "year": 2026,
+      "ref": "valasara2026attributional",
+      "url": "https://doi.org/10.1080/00219592.2026.2662789",
+      "papers": [
+        "P2"
+      ],
+      "blocks": [
+        2,
+        4
+      ],
+      "priority": "2 · Consolidation",
+      "status": "À citer dans P2",
+      "question": "Comment les travaux récents articulent-ils la définition des frontières système entre ACV attributionnelle et conséquentielle ?",
+      "reuse": "Actualiser l'état de l'art de P2 (dont la dernière veille datait de juin 2026) et positionner l'originalité du compilateur déterministe par Graphes de Connaissances Temporels (TKG).",
+      "limit": "Application au génie chimique ; ne traite ni les graphes temporels d'infrastructure numérique ni les contrats de données W3C PROV-O."
+    },
+    {
+      "id": "W11",
+      "title": "Beyond Counting Carbon: AI Environmental Assessments Struggle to Inform Net Impact Decisions",
+      "authors": "Ella Cook, Renee Obringer, Charlotte Freitag, Priya Donti (ETH Zurich)",
+      "year": 2025,
+      "ref": "cook2025beyond",
+      "url": "https://doi.org/10.3929/ethz-c-000789254",
+      "papers": [
+        "P3",
+        "P4",
+        "P5"
+      ],
+      "blocks": [
+        1,
+        6,
+        7,
+        10
+      ],
+      "priority": "2 · Consolidation",
+      "status": "Analysé · Cadrage doctoral",
+      "question": "Pourquoi les bilans carbone actuels de l'IA échouent-ils à éclairer les décisions d'impact net (effets systémiques, incertitude, multicritère) ?",
+      "reuse": "Soutenir directement la problématique générale du manuscrit (Chapitre 1) : nécessité de passer d'un inventaire statique par requête à une cLCA multicritère orientée décision.",
+      "limit": "Constat critique et cadre conceptuel ; requiert l'outillage formel (Blocs B1–B12) pour devenir exécutable sur un portefeuille d'entreprise."
+    },
+    {
+      "id": "W12",
+      "title": "The AI Act and Its Green Blind Spots & UN Environmental Cost of AI Report",
+      "authors": "Imad Antoine Ibrahim et al. (Technology in Society, 2026) ; Balazs Aczel (UN, 2026)",
+      "year": 2026,
+      "ref": "ibrahim2026ai",
+      "url": "https://doi.org/10.1016/j.techsoc.2026.103284",
+      "papers": [
+        "P0",
+        "P5",
+        "P7"
+      ],
+      "blocks": [
+        1,
+        8,
+        12
+      ],
+      "priority": "3 · Sous condition de terrain",
+      "status": "Analysé · Contexte réglementaire",
+      "question": "Quelles sont les angles morts environnementaux des régulations actuelles (AI Act, CSRD/ESRS E1) concernant l'eau, les ressources minérales et l'inférence à l'échelle ?",
+      "reuse": "Contextualiser l'intérêt industriel de CLEMIS et de GreenOps face aux obligations de reporting extra-financier et justifier la Porte Anti-Mosaïque (GWP, WU, ADPe, PE).",
+      "limit": "Analyse juridique et politique ; ne fournit pas de protocole métrologique."
+    }
+  ],
+  "scientificWatch": {
+    "updatedAt": "2026-10-20",
+    "sourceFile": "references.bib",
+    "metrics": {
+      "totalBibEntries": 115,
+      "verifiedPrimaryNotices": 26,
+      "priorityDossiers": 12,
+      "openQuestions": 6
+    },
+    "openQuestionsMatrix": [
+      {
+        "id": "Q1",
+        "question": "Quand et pourquoi le coût Cloud (FinOps) échoue-t-il à classer les priorités environnementales (GreenOps) ?",
+        "papers": [
+          "P0"
+        ],
+        "readings": [
+          "tapio2005towards",
+          "ang2005lmdi",
+          "nioche2026spruce",
+          "GHGProtocol2013Scope3Guidance"
+        ],
+        "extract": "Formules d'élasticité et de décomposition (LMDI / Tapio), traitement des ex æquo dans Kendall τ_b et limites des facteurs spend-based.",
+        "deliverable": "Tableau figé multi-corpus (Interne, UFCG, Azure V2) et correction de la séquence EPIS dans P0."
+      },
+      {
+        "id": "Q2",
+        "question": "Quelle part de l'empreinte matérielle des accélérateurs IA est manquée par les ACV processus classiques (erreur de troncature) ?",
+        "papers": [
+          "P1"
+        ],
+        "readings": [
+          "R01",
+          "lenzen2000errors",
+          "lenzen2009doublecounting",
+          "stadler2018exiobase",
+          "R15",
+          "schneider2025lifecycle",
+          "liu2025environmental"
+        ],
+        "extract": "Frontières de coupure Tier 1 vs MRIO, biais d'allocation physique vs monétaire et règles d'évitement du double comptage.",
+        "deliverable": "Audit des scripts d'hybridation EXIOBASE 3 et clarification écrite du pivot DEC-2026-001."
+      },
+      {
+        "id": "Q3",
+        "question": "Comment estimer de manière bornée l'empreinte de services d'IA managés opaques à partir des seules données de facturation et de tokens ?",
+        "papers": [
+          "P7",
+          "P6"
+        ],
+        "readings": [
+          "R25",
+          "R26",
+          "ecologits2025",
+          "oviedo2026energy",
+          "gsf2024sciforai",
+          "R22"
+        ],
+        "extract": "Plages J/token par famille de modèle, facteur énergétique du cache KV (cache_read vs cache_write) et surcoûts hôte/idle/PUE.",
+        "deliverable": "Table de réconciliation unifiée (P7 vs CLEER vs EcoLogits) et propagation de la révision du cache (REVISSUE-004)."
+      },
+      {
+        "id": "Q4",
+        "question": "Quelles grandeurs énergétiques sont réellement identifiables dans un workflow LLM agentique sous observabilité contrainte ?",
+        "papers": [
+          "P6",
+          "P3"
+        ],
+        "readings": [
+          "wu2025fuel",
+          "tokenomics2025",
+          "swenergy2025",
+          "R11",
+          "R16"
+        ],
+        "extract": "Décomposition par étape de workflow, coût des boucles de réparation/outils et paramétrage du taux de réutilisation h.",
+        "deliverable": "Carte d'identifiabilité (C15) et bornes d'ignorance non probabilistes validées par SPEC-SESSION-OBS-001."
+      },
+      {
+        "id": "Q5",
+        "question": "Comment compiler de manière déterministe et auditable des scénarios conséquentiels dynamiques à partir d'événements temporels ?",
+        "papers": [
+          "P2",
+          "P5"
+        ],
+        "readings": [
+          "ekvall2004system",
+          "schaubroeck2021attributional",
+          "R09",
+          "SteuBing2021_superstructure",
+          "w3cprov2013",
+          "valasara2026attributional"
+        ],
+        "extract": "Règles d'identification des fournisseurs marginaux, contraintes SHACL et traçabilité W3C PROV-O.",
+        "deliverable": "Positionnement actualisé de P2 (envira.compiler) et distinction claire avec la synthèse P5."
+      },
+      {
+        "id": "Q6",
+        "question": "Comment articuler incertitudes corrélées, équivalence fonctionnelle et effets rebonds sans créer de scénarios mosaïques ?",
+        "papers": [
+          "P3",
+          "P4",
+          "P5"
+        ],
+        "readings": [
+          "R03",
+          "R04",
+          "R06",
+          "R07",
+          "R08",
+          "R17",
+          "R18",
+          "saltelli2008global"
+        ],
+        "extract": "Tirages appariés (covariance IA/B0), indices de Sobol/SHAP sous contraintes de simplex et identification DiD échelonnée.",
+        "deliverable": "Tests de robustesse transversaux intégrés dans P0, P1 et P7."
+      }
+    ]
+  }
+}
