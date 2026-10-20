@@ -1,0 +1,24 @@
+{
+  "source": "Victor Berbel public stylesheet",
+  "observedDate": "2026-10-19",
+  "measurement": "declared CSS tokens, not browser computed styles",
+  "observed": {
+    "background": "#ffffff",
+    "ink": "#111111",
+    "text": "#3d3d3d",
+    "soft": "#f3f3f3",
+    "brand": "#c6fb50",
+    "deep": "#193440",
+    "mint": "#a8e6cf",
+    "h1": "7.75rem",
+    "h2": "6.125rem",
+    "radius": "1rem",
+    "container": "1400px"
+  },
+  "adapted": {
+    "font": "Arial, Helvetica, sans-serif",
+    "gutter": "clamp(20px,4vw,64px)",
+    "breakpoints": [640, 1000, 1180],
+    "motion": "CSS reveal + IntersectionObserver; reduced motion supported"
+  }
+}

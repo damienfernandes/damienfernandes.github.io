@@ -1,0 +1,22 @@
+---
+import Base from '../layouts/Base.astro';
+import Button from '../components/Button.astro';
+import ProjectGrid from '../components/ProjectGrid.astro';
+import { href } from '../config/site';
+---
+
+<Base title="Style Guide" noindex>
+  <div class="wrap section">
+    <p class="eyebrow">Local Design System</p>
+    <h1>Typography.</h1>
+    <h2>Compose clearly.</h2>
+    <p class="lead">Reading typography, interactive states, and Eco Mode preview.</p>
+    <div class="hero-cta-group" style="margin-top:2rem">
+      <Button href="#cards">Primary Button</Button>
+      <Button href={href('/review/')} secondary>Open Review Studio</Button>
+    </div>
+    <div id="cards" class="section">
+      <ProjectGrid />
+    </div>
+  </div>
+</Base>

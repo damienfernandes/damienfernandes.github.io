@@ -1,0 +1,33 @@
+---
+import Base from '../../layouts/Base.astro';
+import PublicationCard from '../../components/PublicationCard.astro';
+import data from '../../../generated/public/atlas.json';
+---
+
+<Base title="Publications & Talks">
+  <header class="page-head wrap">
+    <p class="eyebrow">Explore / Publications &amp; Talks</p>
+    <h1>
+      Questions.
+      <br />
+      Contributions.
+      <br />
+      Perspectives.
+    </h1>
+    <p class="lead">
+      Doctoral research milestones (Consequential LCA of AI in business processes) and industry-academic conferences.
+    </p>
+  </header>
+  <section class="wrap section topline">
+    {data.papers.length ? (
+      data.papers.map((paper) => <PublicationCard paper={paper} />)
+    ) : (
+      <div class="empty">
+        <h3>No public publication record released yet.</h3>
+        <p class="muted">
+          Working papers and manuscripts in preparation are not listed as accepted peer-reviewed publications until validated.
+        </p>
+      </div>
+    )}
+  </section>
+</Base>

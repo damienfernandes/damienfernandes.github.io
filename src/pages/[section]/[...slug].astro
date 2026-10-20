@@ -1,0 +1,51 @@
+---
+import Base from '../../layouts/Base.astro';
+import Button from '../../components/Button.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  return (await getCollection('entries', (e) => e.data.public)).map(
+    (entry) => ({
+      params: { section: entry.data.section, slug: entry.id },
+      props: { entry },
+    }),
+  );
+}
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const isRepo = entry.data.section === 'repositories';
+const vis = entry.data.repoVisibility || (entry.data.url ? 'public' : 'internal');
+const platform = entry.data.platform || (entry.data.url ? 'GitHub' : 'GitLab 74software');
+
+const badgeConfig =
+  vis === 'public'
+    ? { label: '🌐 Public Open-Source Repository', cls: 'is-public' }
+    : vis === 'upon-publication'
+      ? { label: '⏳ Scheduled for Open-Source Release (Upon Publication)', cls: 'is-upcoming' }
+      : { label: '🔒 Internal Research & Enterprise Repository', cls: 'is-private' };
+---
+
+<Base title={entry.data.title} description={entry.data.description}>
+  <header class="page-head wrap">
+    <p class="eyebrow">{entry.data.section}</p>
+    {isRepo && (
+      <div class="repo-badges" style="margin-top: 1rem;">
+        <span class:list={['repo-badge', badgeConfig.cls]}>
+          {badgeConfig.label}
+        </span>
+        <span class="pill">{platform}</span>
+        {entry.data.license && <span class="pill">License: {entry.data.license}</span>}
+      </div>
+    )}
+    <h1>{entry.data.title}</h1>
+    <p class="lead">{entry.data.description}</p>
+    {entry.data.url && (
+      <div style="margin-top: 1.5rem;">
+        <Button href={entry.data.url}>Open Repository on {platform}</Button>
+      </div>
+    )}
+  </header>
+  <article class="reading">
+    <Content />
+  </article>
+</Base>

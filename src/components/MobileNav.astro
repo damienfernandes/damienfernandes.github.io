@@ -1,0 +1,27 @@
+---
+import { navigation, submenu } from '../config/navigation';
+import { href } from '../config/site';
+import Button from './Button.astro';
+const isDev = import.meta.env.DEV;
+---
+
+<details class="mobile-nav">
+  <summary>
+    Menu <span aria-hidden="true">+</span>
+  </summary>
+  <nav aria-label="Mobile navigation">
+    {navigation.map((n) => (
+      <a
+        href={href(n.path)}
+        aria-current={Astro.url.pathname === href(n.path) ? 'page' : undefined}
+      >
+        {n.label}
+      </a>
+    ))}
+    {submenu.map((n) => (
+      <a href={href(n.path)}>{n.label}</a>
+    ))}
+    {isDev && <a href={href('/review/')}>Review Studio</a>}
+    <Button href={href('/atlas/')}>Explore the Atlas</Button>
+  </nav>
+</details>

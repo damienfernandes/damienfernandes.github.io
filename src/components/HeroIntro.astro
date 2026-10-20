@@ -1,0 +1,24 @@
+---
+import Button from './Button.astro';
+import { href, site } from '../config/site';
+---
+
+<section class="hero wrap">
+  <p class="eyebrow">
+    <span class="dot"></span> {site.name} · {site.role}
+  </p>
+  <h1>
+    Architecting AI.
+    <br />
+    <em>Assessing its footprint.</em>
+  </h1>
+  <div class="hero-bottom">
+    <p class="lead">
+      Solutions Architect in banking software (SBS) and PhD researcher at LISTIC (Université Savoie Mont Blanc), investigating the multi-criteria Consequential Life Cycle Assessment (cLCA) of AI integration in business service processes.
+    </p>
+    <div class="hero-cta-group">
+      <Button href={href('/atlas/')}>Explore the Research Atlas</Button>
+      <Button href={href('/cv/')} secondary>Curriculum Vitae</Button>
+    </div>
+  </div>
+</section>

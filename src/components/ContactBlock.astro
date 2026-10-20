@@ -1,0 +1,22 @@
+---
+import { site } from '../config/site';
+import Button from './Button.astro';
+---
+
+<section id="contact" class="contact">
+  <p class="eyebrow">Continue the conversation</p>
+  <h2>Shared research or architecture questions?</h2>
+  <div class="contact-bottom">
+    <p class="lead">
+      Enterprise software architecture, AI integration in business processes, and consequential environmental assessment (cLCA).
+    </p>
+    <div class="hero-cta-group">
+      <Button href={site.linkedin}>
+        Connect on LinkedIn
+      </Button>
+      <Button href={site.email ? `mailto:${site.email}` : site.github} secondary>
+        {site.email ? 'Email me' : 'GitHub Profile'}
+      </Button>
+    </div>
+  </div>
+</section>

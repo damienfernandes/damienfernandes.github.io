@@ -1,0 +1,96 @@
+---
+import { renderInlineMarkdownHtml } from '../utils/markdown';
+const { paper } = Astro.props;
+
+// Association des questions de recherche aux blocs méthodologiques principaux de l'Atlas
+const rqBlockMap: Record<string, string> = {
+  'RQ1': 'B2',
+  'RQ2': 'B3',
+  'RQ3': 'B6',
+  'RQ4': 'B6',
+  'RQ5': 'B10',
+  'RQ6': 'B3',
+  'RQ7': 'B2',
+  'RQ8': 'B4',
+  'RQ9': 'B1',
+  'RQ10': 'B2',
+  'RQ11': 'B2',
+  'RQ12': 'B1'
+};
+
+function enrichResearchQuestions(text: string): string {
+  if (!text) return '';
+  let rendered = renderInlineMarkdownHtml(text);
+  // Remplace les mentions RQ par un lien direct vers le bloc méthodologique correspondant
+  rendered = rendered.replace(/\b(RQ\d+)\b/g, (match) => {
+    const blockId = rqBlockMap[match] || 'B1';
+    return `<a href="/atlas/#method:${blockId}" class="rq-link" title="Ouvrir le bloc ${blockId} dans l'Atlas">${match} ↗</a>`;
+  });
+  return rendered;
+}
+---
+
+<article class="publication">
+  <span class="pill" set:html={renderInlineMarkdownHtml(paper.status || 'Status unspecified')} />
+  {paper.year && <span class="muted">{paper.year}</span>}
+  <h3 set:html={renderInlineMarkdownHtml(`${paper.id} — ${paper.title}`)} />
+  
+  {paper.question && (
+    <p>
+      <strong>Research Question:</strong>{' '}
+      <span set:html={enrichResearchQuestions(paper.question)} />
+    </p>
+  )}
+  
+  {paper.innovation && (
+    <p>
+      <strong>Methodological Contribution:</strong>{' '}
+      <span set:html={renderInlineMarkdownHtml(paper.innovation)} />
+    </p>
+  )}
+
+  {paper.blocks && paper.blocks.length > 0 && (
+    <div style="margin-top: 1rem; display: flex; gap: 0.5rem; flex-wrap: wrap; align-items: center;">
+      <span class="muted" style="font-size: 0.85rem;">Linked Method Blocks:</span>
+      {paper.blocks.map((bNum: number) => (
+        <a href={`/atlas/#method:B${bNum}`} class="pill" style="font-size: 0.78rem; text-decoration: none; background: var(--soft);">
+          Bloc B{bNum} ↗
+        </a>
+      ))}
+    </div>
+  )}
+
+  <p class="muted" style="margin-top: 1rem;">
+    Research working record; the stated status does not constitute proof of
+    peer-reviewed acceptance.
+  </p>
+</article>
+
+<style>
+  .rq-link {
+    font-size: 0.82rem;
+    padding: 0.1rem 0.4rem;
+    border-radius: 4px;
+    background: var(--soft);
+    border: 1px solid var(--line);
+    text-decoration: none;
+    color: var(--deep, #193440);
+    font-weight: 600;
+    margin-left: 0.2rem;
+    white-space: nowrap;
+    transition: background 0.2s;
+  }
+  .rq-link:hover {
+    background: var(--lime, #c6fb50);
+    color: var(--ink, #111);
+  }
+  html[data-eco-mode='true'] .rq-link {
+    background: #121a15;
+    color: #cce0d2;
+    border-color: #233629;
+  }
+  html[data-eco-mode='true'] .rq-link:hover {
+    background: #1e3a2f;
+    color: #c6fb50;
+  }
+</style>

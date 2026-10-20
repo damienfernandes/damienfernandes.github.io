@@ -1,0 +1,182 @@
+---
+import Base from '../layouts/Base.astro';
+import SectionHeading from '../components/SectionHeading.astro';
+---
+
+<Base title="Research Library & References" description="Core bibliographic references underpinning the consequential LCA and sustainable AI doctoral thesis.">
+  <article class="reading">
+    <header class="page-head" style="padding-top: 2rem; padding-bottom: 3rem;">
+      <p class="eyebrow">Explore / Library & Bibliography</p>
+      <h1 style="font-size: clamp(2.5rem, 5vw, 4.5rem); margin-top: 1rem;">Research Library.</h1>
+      <p class="lead" style="margin-top: 1.5rem;">
+        Foundational literature, methodological standards, and theoretical frameworks extracted from the shared thesis bibliography (<code style="font-size: 0.9em; padding: 0.1em 0.4em; background: var(--soft); border-radius: 4px;">references.bib</code>).
+      </p>
+    </header>
+
+    <section class="section topline" style="padding-top: 3rem;">
+      <SectionHeading number="01" title="Consequential LCA — Core Methodology" />
+      <p style="margin-bottom: 2rem;">
+        Methodological standards and foundational principles governing consequential life cycle inventory analysis, market boundaries, and systemic substitution modeling.
+      </p>
+      
+      <div class="bib-list">
+        <article class="bib-card">
+          <span class="pill">ISO Standards</span>
+          <h3>ISO 14040:2006 & ISO 14044:2006</h3>
+          <p class="muted">International Organization for Standardization (ISO)</p>
+          <p>Environmental management — Life cycle assessment — Principles, framework, requirements and guidelines.</p>
+        </article>
+
+        <article class="bib-card">
+          <span class="pill">Methodology</span>
+          <h3>System boundaries and input data in consequential life cycle inventory analysis</h3>
+          <p class="muted">Ekvall, T., & Weidema, B. P. (2004) · <em>The International Journal of Life Cycle Assessment</em></p>
+          <p>Seminal paper establishing market-based system boundaries and marginal supplier identification for consequential LCA.</p>
+        </article>
+
+        <article class="bib-card">
+          <span class="pill">Comparative Framework</span>
+          <h3>Attributional and Consequential Life Cycle Assessment: Definitions, Conceptual Characteristics and Modelling Restrictions</h3>
+          <p class="muted">Schaubroeck, T., et al. (2021) · <em>Sustainability</em></p>
+          <p>Comprehensive review of conceptual characteristics, definitions, and distinct modelling restrictions between attributional and consequential paradigms.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section topline" style="padding-top: 3rem;">
+      <SectionHeading number="02" title="Causality & Econometric Identification" />
+      <p style="margin-bottom: 2rem;">
+        Formalisms for causal reasoning, counterfactual inference, and evaluating policy treatments in complex observational systems.
+      </p>
+      
+      <div class="bib-list">
+        <article class="bib-card">
+          <span class="pill">Causal Inference</span>
+          <h3>Causality: Models, Reasoning, and Inference</h3>
+          <p class="muted">Pearl, J. (2009) · <em>Cambridge University Press (2nd Edition)</em></p>
+          <p>The definitive reference on structural causal models, DAGs, backdoor criteria, and counterfactual effect estimation.</p>
+        </article>
+
+        <article class="bib-card">
+          <span class="pill">Econometrics</span>
+          <h3>Difference-in-Differences with Multiple Time Periods</h3>
+          <p class="muted">Callaway, B., & Sant’Anna, P. H. C. (2021) · <em>Journal of Econometrics</em></p>
+          <p>Advanced treatment identification methods under staggered adoptions and conditional parallel trends.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section topline" style="padding-top: 3rem;">
+      <SectionHeading number="03" title="Rebound Effects & Macro-Economic Backfire" />
+      <p style="margin-bottom: 2rem;">
+        Theoretical foundations of efficiency gains, market feedback mechanisms, and environmental rebound phenomena in digital infrastructures.
+      </p>
+      
+      <div class="bib-list">
+        <article class="bib-card">
+          <span class="pill">Economic Theory</span>
+          <h3>Jevons' Paradox Revisited: The Evidence for Backfire from Improved Energy Efficiency</h3>
+          <p class="muted">Sorrell, S. (2009) · <em>Energy Policy</em></p>
+          <p>Comprehensive empirical and theoretical evaluation of energy efficiency gains leading to increased aggregate consumption.</p>
+        </article>
+
+        <article class="bib-card">
+          <span class="pill">Industrial Ecology</span>
+          <h3>The Rebound Effect in Life Cycle Assessment: A Review of Approaches and Challenges</h3>
+          <p class="muted">Font Vivanco, D., et al. (2016) · <em>Journal of Industrial Ecology</em></p>
+          <p>Methodological review linking macro-economic rebound mechanisms directly to life cycle assessment frameworks.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section topline" style="padding-top: 3rem;">
+      <SectionHeading number="04" title="Digital Carbon Footprint & AI Lifecycle" />
+      <p style="margin-bottom: 2rem;">
+        Empirical measurements, life cycle inventories, and energy benchmarks for deep learning, large language models, and cloud infrastructure.
+      </p>
+      
+      <div class="bib-list">
+        <article class="bib-card">
+          <span class="pill">AI Benchmarking</span>
+          <h3>Power Hungry Processing: Watts Driving the Cost of AI Deployment?</h3>
+          <p class="muted">Luccioni, A. S., Jernite, Y., & Strubell, E. (2024) · <em>ACM FAccT</em></p>
+          <p>Pioneering evaluation comparing operational energy and carbon footprints across specialized versus generalist AI deployment tasks.</p>
+        </article>
+
+        <article class="bib-card">
+          <span class="pill">Hardware LCA</span>
+          <h3>More than Carbon: Cradle-to-Grave Environmental Impacts of GenAI Training on the NVIDIA A100 GPU</h3>
+          <p class="muted">Falk, S., et al. (2026) · <em>Journal of Environmental Impact Assessment</em></p>
+          <p>Multicriteria material LCA based on component teardown, establishing granular mineral and abiotic resource footprints.</p>
+        </article>
+
+        <article class="bib-card">
+          <span class="pill">Cloud Infrastructure</span>
+          <h3>Recalibrating Global Data Center Energy-Use Estimates</h3>
+          <p class="muted">Masanet, E., et al. (2020) · <em>Science</em></p>
+          <p>Authoritative bottom-up recalibration of global data center efficiency trends and server virtualization impacts.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section topline" style="padding-top: 3rem;">
+      <SectionHeading number="05" title="Uncertainty, Sensitivity & Dynamic Modeling" />
+      <p style="margin-bottom: 2rem;">
+        Mathematical foundations for global sensitivity analysis, pedigree matrix propagation, and time-explicit life cycle inventories.
+      </p>
+      
+      <div class="bib-list">
+        <article class="bib-card">
+          <span class="pill">Sensitivity Analysis</span>
+          <h3>Global Sensitivity Analysis: The Primer</h3>
+          <p class="muted">Saltelli, A., et al. (2008) · <em>John Wiley & Sons</em></p>
+          <p>The standard textbook on variance-based sensitivity analysis, Sobol indices, and factor prioritization protocols.</p>
+        </article>
+
+        <article class="bib-card">
+          <span class="pill">Dynamic LCA</span>
+          <h3>Considering Time in LCA: Dynamic LCA and Its Application to Global Warming Impact Assessments</h3>
+          <p class="muted">Levasseur, A., et al. (2010) · <em>Environmental Science & Technology</em></p>
+          <p>Foundational integration of time-dependent characterization factors into dynamic life cycle inventory flows.</p>
+        </article>
+
+        <article class="bib-card">
+          <span class="pill">Prospective Databases</span>
+          <h3>PRospective EnvironMental Impact asSEment (premise): A streamlined approach to producing databases for prospective LCA using integrated assessment models</h3>
+          <p class="muted">Sacchi, R., et al. (2022) · <em>Renewable and Sustainable Energy Reviews</em></p>
+          <p>Methodological automation linking integrated assessment pathways to background LCI databases (e.g., ecoinvent).</p>
+        </article>
+      </div>
+    </section>
+  </article>
+</Base>
+
+<style>
+  .bib-list {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  .bib-card {
+    padding: 1.75rem;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--paper);
+  }
+  .bib-card h3 {
+    font-size: 1.25rem;
+    margin: 0.5rem 0 0.3rem;
+    letter-spacing: -0.02em;
+  }
+  .bib-card p {
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+  }
+  .bib-card .muted {
+    font-size: 0.88rem;
+  }
+  html[data-eco-mode='true'] .bib-card {
+    background: var(--soft) !important;
+    border-color: var(--line) !important;
+  }
+</style>

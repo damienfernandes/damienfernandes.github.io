@@ -1,0 +1,1110 @@
+@import './tokens.css';
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+}
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--text);
+  font: 18px/1.5 var(--font);
+  -webkit-font-smoothing: antialiased;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+h1,
+h2,
+h3 {
+  color: var(--ink);
+  font-weight: 400;
+}
+h1 {
+  font-size: var(--h1);
+  line-height: 1;
+  letter-spacing: -0.065em;
+}
+h2 {
+  font-size: var(--h2);
+  line-height: 1.04;
+  letter-spacing: -0.055em;
+}
+h3 {
+  font-size: clamp(1.5rem, 3vw, 2.375rem);
+  line-height: 1.15;
+  letter-spacing: -0.035em;
+}
+p + p {
+  margin-top: 1em;
+}
+a {
+  color: inherit;
+  text-underline-offset: 0.25em;
+}
+button,
+input,
+select {
+  font: inherit;
+}
+button,
+a,
+input,
+select,
+summary {
+  -webkit-tap-highlight-color: transparent;
+}
+button,
+summary {
+  cursor: pointer;
+}
+button {
+  color: inherit;
+}
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+summary:focus-visible {
+  outline: 3px solid #476900;
+  outline-offset: 5px;
+}
+img,
+svg {
+  max-width: 100%;
+}
+::selection {
+  background: var(--lime);
+  color: var(--ink);
+}
+.wrap {
+  max-width: calc(var(--max) + 2 * var(--gutter));
+  margin: auto;
+  padding-inline: var(--gutter);
+}
+.section {
+  padding-block: var(--section);
+}
+.topline {
+  border-top: 1px solid var(--line);
+}
+.eyebrow {
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+  font-size: 0.85rem;
+  letter-spacing: 0.035em;
+  text-transform: uppercase;
+}
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--ink);
+  display: inline-block;
+}
+.muted {
+  color: var(--muted);
+}
+.lead {
+  font-size: clamp(1.2rem, 2vw, 1.625rem);
+  line-height: 1.4;
+  max-width: 40ch;
+}
+.pill {
+  border: 1px solid var(--line);
+  border-radius: 30px;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.8rem;
+  display: inline-block;
+}
+.button {
+  display: inline-flex;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--lime);
+  border: 1px solid transparent;
+  border-radius: 99px;
+  padding: 1rem 1.4rem;
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition:
+    background 0.2s,
+    transform 0.2s;
+}
+.button:hover {
+  background: #b9ed45;
+  transform: translateY(-2px);
+}
+.button.secondary {
+  background: transparent;
+  border-color: var(--line);
+}
+.text-link {
+  display: inline-flex;
+  gap: 1rem;
+  align-items: center;
+}
+.skip {
+  position: fixed;
+  top: -100px;
+  left: 20px;
+  z-index: 20;
+  background: var(--lime);
+  padding: 1rem;
+}
+.skip:focus {
+  top: 15px;
+}
+.header {
+  padding-block: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.brand {
+  text-decoration: none;
+  color: var(--ink);
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+}
+.brand small {
+  display: block;
+  color: var(--muted);
+  font-size: 0.65rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  margin-top: 0.35rem;
+}
+.desktop-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  font-size: 0.8rem;
+}
+.desktop-nav a {
+  text-decoration: none;
+}
+.desktop-nav a:hover,
+.desktop-nav a[aria-current='page'] {
+  text-decoration: underline;
+}
+.dropdown {
+  position: relative;
+}
+.dropdown summary {
+  list-style: none;
+}
+.dropdown summary:after {
+  content: ' +';
+}
+details[open] > summary:after {
+  content: ' −';
+}
+.dropdown-list {
+  position: absolute;
+  background: white;
+  border: 1px solid var(--line);
+  padding: 1rem;
+  right: 0;
+  min-width: 150px;
+  z-index: 10;
+  box-shadow: 0 10px 30px #0001;
+  border-radius: 0.5rem;
+}
+.dropdown-list a {
+  display: block;
+  padding: 0.4rem;
+}
+.dropdown-list a + a {
+  border-top: 1px solid var(--line);
+}
+.mobile-nav {
+  display: none;
+}
+.hero {
+  padding-block: clamp(4rem, 8vw, 8rem) 5rem;
+}
+.hero h1 {
+  max-width: 13ch;
+  margin: 2rem 0 2.5rem;
+}
+.hero h1 em {
+  font-style: normal;
+  color: #757575;
+}
+.hero-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: end;
+}
+.hero-bottom p {
+  max-width: 43ch;
+}
+.hero-counter {
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+.overview {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+}
+.overview .lead {
+  font-size: clamp(1.5rem, 3vw, 2.875rem);
+  line-height: 1.2;
+  letter-spacing: -0.035em;
+  max-width: 30ch;
+}
+.overview .button {
+  margin-top: 2rem;
+}
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+.section-heading h2 {
+  margin-top: 1rem;
+}
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem 1.5rem;
+}
+.project-card {
+  text-decoration: none;
+  display: block;
+}
+.project-card .media {
+  aspect-ratio: 1.2;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--soft);
+  position: relative;
+  display: grid;
+  place-items: center;
+  transition: background 0.3s;
+}
+.project-card:hover .media > svg {
+  transform: scale(1.025);
+}
+.media > svg {
+  width: 90%;
+  transition: transform 0.4s;
+}
+.project-caption {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1.4rem;
+  align-items: start;
+}
+.project-caption p {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-top: 0.4rem;
+}
+.project-caption .arrow {
+  font-size: 1.7rem;
+}
+.project-card:first-child .media {
+  background: var(--deep);
+}
+.project-card:nth-child(2) .media {
+  background: #e9eedf;
+}
+.axis {
+  display: grid;
+  grid-template-columns: 0.35fr 1fr 1.5fr;
+  gap: 2rem;
+  padding: 2.5rem 0;
+  border-top: 1px solid var(--line);
+}
+.axis p {
+  max-width: 43ch;
+}
+.contact {
+  background: var(--soft);
+  border-radius: var(--radius);
+  padding: clamp(2rem, 6vw, 6rem);
+  margin-block: 3rem;
+}
+.contact h2 {
+  max-width: 12ch;
+}
+.contact-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: end;
+  margin-top: 3rem;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding-block: 3rem;
+  font-size: 0.9rem;
+}
+.footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.4rem;
+}
+.page-head {
+  padding-block: 5rem 4rem;
+}
+.page-head h1 {
+  margin-top: 2rem;
+  overflow-wrap: anywhere;
+}
+.page-head .lead {
+  margin-top: 2rem;
+}
+.empty {
+  padding: 3rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--soft);
+}
+.reading {
+  max-width: 780px;
+  margin: auto;
+  padding: 3rem var(--gutter);
+}
+.reading h2 {
+  font-size: 2.2rem;
+  margin: 2.5rem 0 1rem;
+}
+.reading h3 {
+  font-size: 1.6rem;
+  margin: 1.5rem 0 0.8rem;
+}
+.reading p,
+.reading ul {
+  margin-bottom: 1.3rem;
+}
+.reading img {
+  border-radius: var(--radius);
+}
+.publication {
+  padding: 2rem 0;
+  border-top: 1px solid var(--line);
+}
+.publication h3 {
+  margin: 1rem 0;
+}
+.publication p {
+  max-width: 75ch;
+}
+.publication .pill {
+  margin-right: 0.5rem;
+}
+.page-list {
+  display: grid;
+  gap: 1.2rem;
+  list-style: none;
+  padding: 0;
+}
+.page-list a {
+  display: block;
+  padding: 2rem;
+  background: var(--soft);
+  border-radius: var(--radius);
+  text-decoration: none;
+}
+.page-list a:hover {
+  background: #e9eedf;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+@media (max-width: 1180px) {
+  .desktop-nav {
+    display: none;
+  }
+  .mobile-nav {
+    display: block;
+  }
+  .mobile-nav summary {
+    padding: 0.7rem 1rem;
+    border: 1px solid var(--line);
+    border-radius: 30px;
+    list-style: none;
+  }
+  .mobile-nav nav {
+    position: absolute;
+    left: var(--gutter);
+    right: var(--gutter);
+    top: 90px;
+    background: white;
+    z-index: 10;
+    border: 1px solid var(--line);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 20px 60px #0002;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .mobile-nav a {
+    font-size: 1rem;
+    padding: 0.3rem;
+  }
+  .mobile-nav .button {
+    grid-column: 1/-1;
+  }
+  .overview {
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+  }
+}
+@media (max-width: 640px) {
+  body {
+    font-size: 16px;
+  }
+  .hero-bottom,
+  .section-heading,
+  .contact-bottom {
+    display: block;
+  }
+  .hero-counter {
+    margin-top: 2rem;
+  }
+  .hero-bottom .button {
+    margin-top: 2rem;
+  }
+  .overview,
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+  .section-heading > a {
+    margin-top: 1.5rem;
+  }
+  .axis {
+    grid-template-columns: 2rem 1fr;
+    gap: 1rem;
+  }
+  .axis p {
+    grid-column: 2;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .contact-bottom .button {
+    margin-top: 2rem;
+  }
+  .hero h1 {
+    font-size: clamp(3rem, 13vw, 5rem);
+  }
+  .empty {
+    padding: 1.5rem;
+  }
+}
+
+/* ==========================================================================
+   Header Actions, Hero CTA Group, CV Page & Local Review Studio
+   ========================================================================== */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+.hero-cta-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+.cv-timeline {
+  display: grid;
+  gap: 2rem;
+}
+.cv-card {
+  padding: 2.2rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--paper);
+}
+.cv-card-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  align-items: start;
+  flex-wrap: wrap;
+}
+.cv-org {
+  margin-top: 0.4rem;
+  color: var(--muted);
+}
+.cv-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+}
+.cv-list {
+  margin: 1.2rem 0 0;
+  padding-left: 1.2rem;
+  display: grid;
+  gap: 0.55rem;
+  max-width: 78ch;
+}
+.cv-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.4rem;
+}
+.cv-skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+.cv-skill-box {
+  padding: 2rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--soft);
+}
+.review-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.2rem;
+  margin-top: 3rem;
+}
+.review-stat-card {
+  padding: 1.5rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--soft);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.review-stat-card strong {
+  font-size: 1.3rem;
+  color: var(--ink);
+}
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 1.5rem;
+}
+.review-card {
+  padding: 2rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--paper);
+}
+.review-card-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: start;
+}
+
+/* ==========================================================================
+   SOZO Design Inspired Eco Mode Switch, Fixed Toast, Modal & Theme Overrides
+   (Zero Layout Shift on Header / Menu + High Contrast Button)
+   ========================================================================== */
+.eco-control {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-size: 0.78rem;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+.eco-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 99px;
+  padding: 0.35rem 0.75rem 0.35rem 0.45rem;
+  font-size: 0.78rem;
+  color: var(--ink);
+  white-space: nowrap;
+}
+.eco-switch-track {
+  width: 30px;
+  height: 16px;
+  background: var(--line);
+  border-radius: 99px;
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+  transition: background 0.2s;
+}
+.eco-switch-thumb {
+  width: 12px;
+  height: 12px;
+  background: var(--ink);
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.2s, background 0.2s;
+}
+.eco-switch[aria-checked='true'] .eco-switch-track {
+  background: var(--lime);
+}
+.eco-switch[aria-checked='true'] .eco-switch-thumb {
+  transform: translateX(14px);
+  background: #111;
+}
+.eco-info-trigger {
+  background: none;
+  border: 0;
+  padding: 0;
+  font-size: 0.75rem;
+  color: var(--muted);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  white-space: nowrap;
+}
+.eco-toast {
+  position: fixed;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  z-index: 50;
+  background: #13261b;
+  color: #e6f4ea;
+  border: 1px solid #264734;
+  border-radius: 99px;
+  font-size: 0.8rem;
+  padding: 0.55rem 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+.eco-toast[hidden] {
+  display: none !important;
+}
+.eco-banner-link {
+  background: none;
+  border: 0;
+  color: var(--lime);
+  text-decoration: underline;
+  font-size: 0.8rem;
+  padding: 0;
+}
+.eco-dialog {
+  max-width: 640px;
+  width: calc(100% - 2rem);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 0;
+  background: var(--paper);
+  color: var(--text);
+  box-shadow: 0 25px 70px #0004;
+}
+.eco-dialog::backdrop {
+  background: rgba(0, 0, 0, 0.6);
+}
+.eco-dialog-box {
+  padding: 2.2rem;
+}
+.eco-dialog-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.eco-dialog-top h2 {
+  font-size: 2rem;
+  margin-top: 0.5rem;
+}
+.eco-dialog-close {
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+}
+.eco-dialog-content h3 {
+  font-size: 1.25rem;
+  margin: 1.5rem 0 0.75rem;
+}
+.eco-dialog-content ul {
+  padding-left: 1.2rem;
+  display: grid;
+  gap: 0.6rem;
+}
+.eco-dialog-ref {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: var(--soft);
+  border-radius: var(--small-radius);
+  font-size: 0.9rem;
+}
+/* Global Eco Mode Active Overrides & Button Contrast Fix */
+html[data-eco-mode='true'] {
+  --paper: #0b0f0c;
+  --soft: #121a15;
+  --ink: #eef7f0;
+  --text: #cce0d2;
+  --muted: #8aa693;
+  --line: #233629;
+  --deep: #0f1c15;
+  scroll-behavior: auto !important;
+}
+
+html[data-eco-mode='true'] main h1,
+html[data-eco-mode='true'] main h2,
+html[data-eco-mode='true'] main h3 {
+  font-weight: 400 !important;
+}
+
+html[data-eco-mode='true'] main strong,
+html[data-eco-mode='true'] main b {
+  font-weight: 700 !important;
+  color: var(--ink);
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.88em;
+  background: var(--soft);
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+}
+
+html[data-eco-mode='true'] *,
+html[data-eco-mode='true'] *::before,
+html[data-eco-mode='true'] *::after {
+  animation: none !important;
+  transition: none !important;
+  box-shadow: none !important;
+}
+
+html[data-eco-mode='true'] .dropdown-list,
+html[data-eco-mode='true'] .mobile-nav nav,
+html[data-eco-mode='true'] .atlas-card,
+html[data-eco-mode='true'] .atlas-toolbar input,
+html[data-eco-mode='true'] .atlas-toolbar select,
+html[data-eco-mode='true'] .timeline-node,
+html[data-eco-mode='true'] .graph-viewport {
+  background: var(--soft) !important;
+  color: var(--text) !important;
+  border-color: var(--line) !important;
+}
+
+/* 1. Boutons principaux (.button) en Eco Mode :
+      Fond vert forêt très sombre (#13261b) + Texte vert clair (#c6fb50) ou blanc (#ffffff) */
+html[data-eco-mode='true'] .button,
+html[data-eco-mode='true'] a.button,
+html[data-eco-mode='true'] button.button {
+  background-color: #13261b !important;
+  background: #13261b !important;
+  color: #ffffff !important;
+  border: 1px solid #4ade80 !important;
+}
+
+html[data-eco-mode='true'] .button:hover,
+html[data-eco-mode='true'] a.button:hover,
+html[data-eco-mode='true'] button.button:hover {
+  background-color: #1e3a2f !important;
+  background: #1e3a2f !important;
+  color: #c6fb50 !important;
+  border-color: #c6fb50 !important;
+}
+
+/* 2. Onglets de l'Atlas (.atlas-tabs a) en Eco Mode */
+html[data-eco-mode='true'] .atlas-tabs a {
+  background: #121a15 !important;
+  color: #cce0d2 !important;
+  border: 1px solid #233629 !important;
+}
+
+html[data-eco-mode='true'] .atlas-tabs a[aria-current='page'],
+html[data-eco-mode='true'] .atlas-tabs a:hover {
+  background: #1e3a2f !important;
+  color: #c6fb50 !important;
+  border-color: #c6fb50 !important;
+}
+/* ==========================================================================
+   Profile Portrait Column (Home Overview & CV Header) + Eco Mode Placeholder
+   ========================================================================== */
+.overview.overview-with-photo {
+  display: grid;
+  grid-template-columns: 1.35fr 0.85fr;
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: center;
+}
+
+.cv-head-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr;
+  gap: clamp(2rem, 5vw, 4.5rem);
+  align-items: center;
+}
+
+.profile-portrait-frame {
+  margin: 0;
+  width: 100%;
+  max-width: 420px;
+  justify-self: end;
+  aspect-ratio: 1 / 1;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: #000000;
+  border: 1px solid var(--line);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
+  display: grid;
+  place-items: center;
+}
+
+.profile-portrait-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+/* En Eco Mode : on masque la photo matricielle pour économiser la bande passante */
+html[data-eco-mode='true'] .profile-portrait-frame {
+  background: var(--soft) !important;
+  border: 1px dashed var(--line) !important;
+  padding: 2rem;
+}
+
+html[data-eco-mode='true'] .profile-portrait-img {
+  display: none !important;
+}
+
+html[data-eco-mode='true'] .profile-portrait-frame::after {
+  content: '🌱 Portrait hidden in Eco Mode to reduce image payload';
+  color: var(--muted);
+  font-size: 0.85rem;
+  text-align: center;
+  line-height: 1.4;
+}
+
+@media (max-width: 900px) {
+  .overview.overview-with-photo,
+  .cv-head-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-portrait-frame {
+    justify-self: start;
+    max-width: 320px;
+    margin-top: 1.5rem;
+  }
+}
+
+/* ==========================================================================
+   Footer Affiliation Links Styling
+   ========================================================================== */
+.footer-copy {
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.footer-org-link {
+  color: inherit !important;
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+  font-weight: 500;
+}
+
+.footer-org-link:hover {
+  color: inherit !important;
+}
+
+html[data-eco-mode='true'] .footer-org-link {
+  color: var(--text);
+}
+
+html[data-eco-mode='true'] .footer-org-link:hover {
+  color: var(--lime, #c6fb50);
+}
+
+/* Sélection de texte en mode standard */
+::selection {
+  background: var(--lime);
+  color: var(--ink);
+}
+
+/* Sélection de texte en Eco Mode (harmonisée avec les tons sombres et le vert des boutons) */
+html[data-eco-mode='true'] ::selection {
+  background: #1e3a2f !important;
+  color: #c6fb50 !important;
+}
+/* ==========================================================================
+   Repository Tiers (Open-Source -> Upon Publication -> Internal) & Badges
+   ========================================================================== */
+.repo-tier-stack {
+  display: grid;
+  gap: 4.5rem;
+}
+
+.repo-tier-header {
+  margin-bottom: 1.75rem;
+}
+
+.repo-tier-header h2 {
+  font-size: clamp(1.8rem, 3.5vw, 3rem);
+  margin-top: 0.6rem;
+}
+
+.repo-card-item {
+  padding: 2rem;
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.repo-title-link {
+  text-decoration: none;
+}
+
+.repo-title-link:hover h3 {
+  text-decoration: underline;
+}
+
+.repo-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.repo-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 30px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  border: 1px solid transparent;
+}
+
+/* 1. Public Open-Source (Vert) */
+.repo-badge.is-public {
+  background: #e7f4ed;
+  color: #126b56;
+  border-color: #b8dac7;
+}
+
+/* 2. Upon Publication (Bleu académique) */
+.repo-badge.is-upcoming {
+  background: #e6eef8;
+  color: #24507a;
+  border-color: #b5cce6;
+}
+
+/* 3. Internal / Private (Ambre discret) */
+.repo-badge.is-private {
+  background: #fff4e0;
+  color: #835210;
+  border-color: #e6cca0;
+}
+
+.repo-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+/* Adaptation Eco Mode */
+html[data-eco-mode='true'] .repo-badge.is-public {
+  background: #13261b !important;
+  color: #c6fb50 !important;
+  border-color: #264734 !important;
+}
+
+html[data-eco-mode='true'] .repo-badge.is-upcoming {
+  background: #111d29 !important;
+  color: #93c5fd !important;
+  border-color: #26425e !important;
+}
+
+html[data-eco-mode='true'] .repo-badge.is-private {
+  background: #1f1a12 !important;
+  color: #f3c98b !important;
+  border-color: #4a3a22 !important;
+}
+
+/* ==========================================================================
+   Correctif Eco Mode — Liens de détail (.detail-link et similaires)
+   ========================================================================== */
+
+html[data-eco-mode='true'] .detail-link,
+html[data-eco-mode='true'] a.detail-link,
+html[data-eco-mode='true'] button.detail-link,
+html[data-eco-mode='true'] #swRoot .detail-link,
+html[data-eco-mode='true'] #swRoot a[class*="link"],
+html[data-eco-mode='true'] #swRoot button[class*="link"] {
+  background-color: #1a2e26 !important;
+  color: #c6fb50 !important;
+  border: 1px solid #365c4c !important;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  text-decoration: none !important;
+  display: inline-block;
+  margin: 2px 0;
+}
+
+html[data-eco-mode='true'] .detail-link:hover,
+html[data-eco-mode='true'] a.detail-link:hover,
+html[data-eco-mode='true'] button.detail-link:hover {
+  background-color: #c6fb50 !important;
+  color: #0d1512 !important;
+  border-color: #c6fb50 !important;
+}
+
+/* S'assure que le texte et les listes à l'intérieur du détail de la veille sont bien contrastés */
+html[data-eco-mode='true'] #swRoot article,
+html[data-eco-mode='true'] #swRoot .card,
+html[data-eco-mode='true'] .watch-grid article {
+  background-color: #121f1a !important;
+  color: #e8f0ec !important;
+  border-color: #2a4036 !important;
+}
+
+html[data-eco-mode='true'] #swRoot article h3,
+html[data-eco-mode='true'] #swRoot article h4,
+html[data-eco-mode='true'] #swRoot article b {
+  color: #c6fb50 !important;
+}

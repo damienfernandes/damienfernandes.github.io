@@ -1,0 +1,44 @@
+---
+import Base from '../layouts/Base.astro';
+import { site } from '../config/site';
+---
+
+<Base title="Credits, Privacy & Sustainable Web Design">
+  <article class="reading">
+    <h1 style="font-size:3.5rem">Credits, Privacy &amp; Sustainability</h1>
+    <h2>Design &amp; Architecture</h2>
+    <p>
+      Personal academic and professional site of Damien Fernandes, built with Astro. Visual direction inspired by{' '}
+      <a href="https://www.victorberbel.work/">Victor Berbel</a>, reinterpreted with original components. Navigation structure inspired by{' '}
+      <a href="https://github.com/alshedivat/al-folio">al-folio</a>.
+    </p>
+    <p>
+      Original SVG illustrations and native system fonts. No third-party client project, portrait, or proprietary font file is reproduced.
+    </p>
+
+    <h2>Sustainable Web Design &amp; Eco Mode (SOZO Reference)</h2>
+    <p>
+      An average web page produces roughly <strong>{site.ecoMode.estimatedStandardCo2Grams}g of CO₂ per visit</strong> due to network data transfer and client/server energy consumption. In alignment with my doctoral thesis on the multi-criteria environmental assessment of digital and AI services, this website integrates an interactive <strong>Eco Mode</strong> switch in the header.
+    </p>
+    <p>
+      This feature is directly inspired by the award-winning digital agency{' '}
+      <a href={site.ecoMode.agencyUrl} target="_blank" rel="noopener noreferrer">{site.ecoMode.agencyName}</a> and their sustainable web design initiative documented in:{' '}
+      <a href={site.ecoMode.referenceUrl} target="_blank" rel="noopener noreferrer">
+        Sustainable Web Design: Our New Eco Mode ↗
+      </a>.
+    </p>
+    <ul>
+      <li><strong>OLED Dark Palette:</strong> Reduces display power consumption on OLED/AMOLED screens.</li>
+      <li><strong>Single-Weight System Typography:</strong> Eliminates external font requests and multi-weight rendering overhead.</li>
+      <li><strong>Media &amp; Canvas Frugal Mode:</strong> Replaces decorative visual frames with lightweight wireframe notices and disables all animations.</li>
+    </ul>
+
+    <h2>Data &amp; Privacy</h2>
+    <p>
+      This static site sets no tracking cookies and embeds no analytics or external forms. The Eco Mode preference is stored strictly locally in your browser (<code>localStorage</code>). External links lead to services governed by their own privacy policies.
+    </p>
+    <p>
+      The Research Atlas is a distinct public projection. Missing data entries indicate non-public work in progress rather than null results.
+    </p>
+  </article>
+</Base>

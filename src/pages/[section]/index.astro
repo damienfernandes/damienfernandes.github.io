@@ -1,0 +1,181 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+import { href } from '../../config/site';
+
+export function getStaticPaths() {
+  return [
+    'blog',
+    'repositories',
+    'teaching',
+    'people',
+    'books',
+    'news',
+  ].map((section) => ({ params: { section } }));
+}
+
+const { section } = Astro.params;
+const entries = await getCollection(
+  'entries',
+  (e) => e.data.public && e.data.section === section,
+);
+
+const titles: Record<string, string> = {
+  blog: 'Notes & reflections.',
+  repositories: 'Code & open resources.',
+  teaching: 'Teaching & mentoring.',
+  people: 'Collaborations & community.',
+  books: 'Reading list & bookshelf.',
+  news: 'News & talks.',
+};
+
+type RepoGroupKey = 'public' | 'upon-publication' | 'internal';
+
+function getRepoTier(e: (typeof entries)[number]): RepoGroupKey {
+  const v = e.data.repoVisibility;
+  if (v === 'public' || (!v && e.data.url)) return 'public';
+  if (v === 'upon-publication') return 'upon-publication';
+  return 'internal';
+}
+
+const repoGroups: {
+  key: RepoGroupKey;
+  eyebrow: string;
+  title: string;
+  subtitle: string;
+  badgeLabel: string;
+  badgeClass: string;
+}[] = [
+  {
+    key: 'public',
+    eyebrow: '01 / Open-Source',
+    title: 'Public & Open-Source Repositories',
+    subtitle: 'Publicly available code, upstream contributions, and open tools on GitHub.',
+    badgeLabel: '🌐 Public Open-Source',
+    badgeClass: 'is-public',
+  },
+  {
+    key: 'upon-publication',
+    eyebrow: '02 / Academic Reproducibility',
+    title: 'Scheduled for Release (Upon Publication)',
+    subtitle: 'Research frameworks, cLCA compilers, and FAIR replication packages to be released publicly upon peer-reviewed acceptance of the associated papers.',
+    badgeLabel: '⏳ Open-Source Upon Publication',
+    badgeClass: 'is-upcoming',
+  },
+  {
+    key: 'internal',
+    eyebrow: '03 / Enterprise & Doctoral Infrastructure',
+    title: 'Internal Research & Enterprise Platforms',
+    subtitle: 'Internal engineering platforms, telemetry pipelines, and research orchestration hosted on GitLab 74software.',
+    badgeLabel: '🔒 Internal Research Repo',
+    badgeClass: 'is-private',
+  },
+];
+
+const sortedEntries = [...entries].sort(
+  (a, b) => (a.data.order ?? 99) - (b.data.order ?? 99),
+);
+---
+
+<Base title={section}>
+  <header class="page-head wrap">
+    <p class="eyebrow">Explore / {section}</p>
+    <h1>{titles[section!]}</h1>
+    {section === 'repositories' && (
+      <p class="lead">
+        Open-source contributions, reproducible doctoral research frameworks (released upon paper acceptance), and internal enterprise GreenOps platforms.
+      </p>
+    )}
+  </header>
+
+  <section class="wrap section topline">
+    {sortedEntries.length ? (
+      section === 'repositories' ? (
+        <div class="repo-tier-stack">
+          {repoGroups.map((group) => {
+            const items = sortedEntries.filter((e) => getRepoTier(e) === group.key);
+            if (!items.length) return null;
+            return (
+              <div class="repo-tier-section">
+                <div class="repo-tier-header">
+                  <p class="eyebrow">{group.eyebrow}</p>
+                  <h2>{group.title}</h2>
+                  <p class="muted" style="max-width: 68ch; margin-top: 0.5rem;">
+                    {group.subtitle}
+                  </p>
+                </div>
+
+                <ul class="page-list">
+                  {items.map((e) => {
+                    const platform =
+                      e.data.platform || (e.data.url ? 'GitHub' : 'GitLab 74software');
+                    return (
+                      <li>
+                        <div class="repo-card-item">
+                          <div class="repo-card-main">
+                            <div class="repo-badges">
+                              <span class:list={['repo-badge', group.badgeClass]}>
+                                {group.badgeLabel}
+                              </span>
+                              <span class="pill">{platform}</span>
+                              {e.data.license && <span class="pill">{e.data.license}</span>}
+                            </div>
+                            <a href={href(`/${section}/${e.id}/`)} class="repo-title-link">
+                              <h3>{e.data.title}</h3>
+                            </a>
+                            <p style="margin-top: 0.5rem; max-width: 68ch;">
+                              {e.data.description}
+                            </p>
+                          </div>
+
+                          <div class="repo-card-actions">
+                            {e.data.url && (
+                              <a
+                                href={e.data.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="button"
+                                style="padding: 0.65rem 1.15rem; font-size: 0.85rem;"
+                              >
+                                View on {platform} ↗
+                              </a>
+                            )}
+                            <a
+                              href={href(`/${section}/${e.id}/`)}
+                              class="button secondary"
+                              style="padding: 0.65rem 1.15rem; font-size: 0.85rem;"
+                            >
+                              Read Architecture Sheet ↗
+                            </a>
+                          </div>
+                        </div>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            );
+          })}
+        </div>
+      ) : (
+        <ul class="page-list">
+          {sortedEntries.map((e) => (
+            <li>
+              <a href={href(`/${section}/${e.id}/`)}>
+                <h3>{e.data.title}</h3>
+                <p>{e.data.description}</p>
+              </a>
+            </li>
+          ))}
+        </ul>
+      )
+    ) : (
+      <div class="empty">
+        <h3>No public entries published yet in this section.</h3>
+        <p class="muted">
+          This section will be populated as entries are validated for public release (content may be written in French or English).
+        </p>
+      </div>
+    )}
+  </section>
+</Base>

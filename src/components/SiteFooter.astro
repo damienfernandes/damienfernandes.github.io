@@ -1,0 +1,21 @@
+---
+import { href, site } from '../config/site';
+const isDev = import.meta.env.DEV;
+---
+
+<footer class="footer wrap">
+  <span class="footer-copy">
+    © {2026} {site.name} · 
+    <a href="https://www.74software.com/" target="_blank" rel="noopener noreferrer" class="footer-org-link">74software ↗</a> · 
+    <a href="https://www.univ-smb.fr/listic/" target="_blank" rel="noopener noreferrer" class="footer-org-link">LISTIC Laboratory (USMB) ↗</a>
+  </span>
+  <nav aria-label="Footer navigation">
+    <a href={href('/cv/')}>CV / Resume</a>
+    <a href={href('/news/')}>News</a>
+    <a href={href('/#contact')}>Contact</a>
+    <a href={site.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+    <a href={site.github} target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+    <a href={href('/credits/')}>Credits, Privacy &amp; Eco-Design</a>
+    {isDev && <a href={href('/review/')}>Review Studio (Local)</a>}
+  </nav>
+</footer>

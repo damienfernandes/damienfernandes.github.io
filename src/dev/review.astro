@@ -1,0 +1,170 @@
+---
+import Base from '../layouts/Base.astro';
+import SectionHeading from '../components/SectionHeading.astro';
+import { getCollection } from 'astro:content';
+import { cvData } from '../data/cv';
+import atlasData from '../../generated/public/atlas.json';
+import { href } from '../config/site';
+
+const allEntries = await getCollection('entries');
+const publicEntries = allEntries.filter((e) => e.data.public);
+
+const sectionRecommendations = [
+  {
+    section: '01. Home (`/`) — Positioning & Identity',
+    route: '/',
+    languageRule: '100% English (Templates, Titles, Personal Bio)',
+    status: 'Configured & Active',
+    recommendedElements: [
+      'Highlight your dual positioning immediately in the Hero: Solutions Architect in Banking Software (SBS) + PhD Researcher at LISTIC (Université Savoie Mont Blanc).',
+      'Explicitly mention the 4 core impact categories of your 5-year doctoral thesis: Global Warming Potential (GWP), Acidification / Abiotic Footprint (AFP/ADP), Water Consumption, and Primary Energy.',
+      'Provide direct pathways to the Interactive Research Atlas (`/atlas/`) and the detailed English CV (`/cv/`).',
+    ],
+  },
+  {
+    section: '02. Projects & PhD Thesis (`/projects/`, `/projects/recherche/`, `/projects/atlas/`)',
+    route: '/projects/',
+    languageRule: 'English titles & templates / French or English analytical body content',
+    status: '2 Core Projects Active',
+    recommendedElements: [
+      'Add a System Boundary Diagram comparing a traditional banking service workflow vs. an AI-augmented service workflow.',
+      'Define the Functional Unit (Unité Fonctionnelle) at the business service process scale (e.g., end-to-end processing of a banking loan/credit workflow) rather than isolated model inference.',
+      'Explain why Consequential LCA (cLCA) is required over Attributional LCA to capture marginal energy mixes, hardware replacement cycles, and behavioral/process rebound effects.',
+    ],
+  },
+  {
+    section: '03. Interactive Research Atlas (`/atlas/`)',
+    route: '/atlas/',
+    languageRule: 'English UI controls & navigation / French or English dataset records (`atlas.json`)',
+    status: `${atlasData.refs.length} refs · ${atlasData.blocks.length} blocks · ${atlasData.papers.length} papers`,
+    recommendedElements: [
+      'Populate your public policy (`config/public-policy.example.json`) with validated foundational references on Consequential LCA (Ekvall, Weidema) and Sustainable AI (Ligozat, Luccioni, Wu et al.).',
+      'Link methodological blocks (Functional Unit definition, Process Boundary modeling, Multi-criteria Inventory) to your planned PhD articles.',
+      'Keep the `<noscript>` and relation list active so users browsing in Eco Mode or with assistive tech have full text access.',
+    ],
+  },
+  {
+    section: '04. Publications & Talks (`/publications/` & `/news/`)',
+    route: '/publications/',
+    languageRule: 'English UI badges & headers / Original language titles ([FR] or [EN])',
+    status: `${atlasData.papers.length} public papers`,
+    recommendedElements: [
+      'Add your 2026 conference talk at "Les OFF de l’IA" (Annecy): "Face à l’IA, quels choix pour les entreprises ?" (SBS / LISTIC USMB) in the `/news/` or `/publications/` section.',
+      'List your 5-year PhD publication roadmap: (1) Literature review on cLCA of AI in business services, (2) Methodological framework for multi-criteria process assessment, (3) Banking software industrial case study.',
+    ],
+  },
+  {
+    section: '05. Curriculum Vitae (`/cv/`)',
+    route: '/cv/',
+    languageRule: 'Strictly 100% English',
+    status: `${cvData.experience.length} roles · ${cvData.education.length} degrees`,
+    recommendedElements: [
+      'Includes your complete detailed career from 2003 to 2026: PhD at LISTIC/USMB, Solutions Architect & Engineering Manager at SBS, UTiGROUP (Crédit Agricole), Micropole-Univers (Kelios), Sopra Group (BNP Paribas Factor CODA, MDPH 13, City of Marseille, Evolan), and early roles (Cereal Partners GLOBE, Sofreco).',
+      'Includes your USMB Master & Bachelor degrees, Lycée Démotz de la Salle, and Volunteer Firefighter certification (Aix-en-Provence).',
+    ],
+  },
+  {
+    section: '06. Blog, Teaching, Repositories & Bookshelf (`/blog/`, `/teaching/`, `/repositories/`, `/books/`)',
+    route: '/blog/',
+    languageRule: 'English section headers / French or English Markdown entries in `src/content/entries/`',
+    status: `${publicEntries.length} public / ${allEntries.length} total Markdown entries`,
+    recommendedElements: [
+      'Blog (`/blog/`): Short field notes (in French or English) bridging enterprise architecture and environmental LCA (e.g., "Why measuring LLM tokens is not enough for enterprise services").',
+      'Teaching (`/teaching/`): Engineering mentoring, Agile/Management 3.0 workshops, and academic interventions at USMB.',
+      'Bookshelf (`/books/`): Key books on Life Cycle Assessment, Green IT, Systems Thinking, and Software Architecture.',
+    ],
+  },
+];
+---
+
+<Base title="Local Review Studio" noindex wide>
+  <div class="wrap section">
+    <p class="eyebrow">Local Development Only (`/review/`)</p>
+    <h1 style="max-width:18ch;margin-top:1rem">Editorial &amp; Architecture Review Studio.</h1>
+    <p class="lead" style="margin-top:1.5rem;max-width:60ch">
+      This local review interface is injected only during <code>npm run dev</code> (excluded from production builds). Use it to audit your site’s English UI compliance, verify Eco Mode, inspect content collections, and follow the recommended content strategy for each section.
+    </p>
+
+    <div class="review-metrics">
+      <div class="review-stat-card">
+        <span class="muted">UI &amp; Bio Language</span>
+        <strong>100% English</strong>
+      </div>
+      <div class="review-stat-card">
+        <span class="muted">CV Career Entries</span>
+        <strong>{cvData.experience.length} Roles / {cvData.education.length} Degrees</strong>
+      </div>
+      <div class="review-stat-card">
+        <span class="muted">Markdown Entries (`entries`)</span>
+        <strong>{publicEntries.length} Public / {allEntries.length} Total</strong>
+      </div>
+      <div class="review-stat-card">
+        <span class="muted">Current Eco Mode State</span>
+        <strong id="review-eco-state">Checking…</strong>
+      </div>
+    </div>
+
+    <section class="section topline">
+      <SectionHeading number="01" title="Section Audit & Recommended Content." />
+      <div class="review-grid">
+        {sectionRecommendations.map((item) => (
+          <article class="review-card">
+            <div class="review-card-head">
+              <h3>
+                <a href={href(item.route)}>{item.section}</a>
+              </h3>
+              <span class="pill">{item.status}</span>
+            </div>
+            <p class="muted" style="margin-top:0.5rem;font-size:0.9rem">
+              <strong>Language Policy:</strong> {item.languageRule}
+            </p>
+            <h4 style="margin:1.2rem 0 0.5rem;font-size:1rem">Recommended elements to feed this section:</h4>
+            <ul class="cv-list">
+              {item.recommendedElements.map((rec) => (
+                <li>{rec}</li>
+              ))}
+            </ul>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <section class="section topline">
+      <SectionHeading number="02" title="Markdown Content Collection (`src/content/entries/`)." />
+      {allEntries.length ? (
+        <ul class="page-list">
+          {allEntries.map((e) => (
+            <li>
+              <a href={e.data.public ? href(`/${e.data.section}/${e.id}/`) : '#'}>
+                <span class="pill">{e.data.section}</span>
+                <span class="pill">{e.data.public ? 'PUBLIC' : 'PRIVATE DRAFT'}</span>
+                <h3 style="margin-top:0.8rem">{e.data.title}</h3>
+                <p>{e.data.description}</p>
+              </a>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <div class="empty">
+          <h3>No Markdown files in `src/content/entries/` yet.</h3>
+          <p class="muted">
+            Create `.md` files in `src/content/entries/` with frontmatter (`title`, `section`, `description`, `public: true`) to populate `/blog/`, `/news/`, `/teaching/`, `/books/`, `/people/`, or `/repositories/`.
+          </p>
+        </div>
+      )}
+    </section>
+  </div>
+
+  <script is:inline>
+    const stateEl = document.getElementById('review-eco-state');
+    function syncEcoState() {
+      const active = document.documentElement.getAttribute('data-eco-mode') === 'true';
+      if (stateEl) stateEl.textContent = active ? '🌱 Active (Eco Mode ON)' : 'Standard Mode';
+    }
+    syncEcoState();
+    new MutationObserver(syncEcoState).observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['data-eco-mode'],
+    });
+  </script>
+</Base>

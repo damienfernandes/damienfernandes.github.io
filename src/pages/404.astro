@@ -1,0 +1,16 @@
+---
+import Base from '../layouts/Base.astro';
+import Button from '../components/Button.astro';
+import { href } from '../config/site';
+---
+
+<Base title="Page not found" noindex>
+  <div class="wrap section">
+    <p class="eyebrow">404</p>
+    <h1>Another path.</h1>
+    <p class="lead" style="margin:2rem 0">
+      This page does not exist or is not publicly available.
+    </p>
+    <Button href={href('/')}>Back to Home</Button>
+  </div>
+</Base>

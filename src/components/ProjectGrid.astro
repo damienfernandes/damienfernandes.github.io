@@ -1,0 +1,23 @@
+---
+import ProjectCard from './ProjectCard.astro';
+import AtlasPreview from './AtlasPreview.astro';
+import MethodPreview from './MethodPreview.astro';
+import { href } from '../config/site';
+---
+
+<div class="project-grid">
+  <ProjectCard
+    href={href('/projects/atlas/')}
+    title="Research Atlas"
+    description="Interactive application · Knowledge graph"
+  >
+    <AtlasPreview />
+  </ProjectCard>
+  <ProjectCard
+    href={href('/projects/recherche/')}
+    title="Assessing to Decide (PhD)"
+    description="Consequential LCA · Multi-criteria methodology"
+  >
+    <MethodPreview />
+  </ProjectCard>
+</div>

@@ -1,0 +1,139 @@
+---
+import { site } from '../config/site';
+---
+
+<div class="eco-control">
+  <button
+    id="eco-mode-toggle"
+    type="button"
+    class="eco-switch"
+    role="switch"
+    aria-checked="false"
+    aria-label="Toggle Eco Mode to reduce carbon footprint and energy usage"
+  >
+    <span class="eco-switch-track" aria-hidden="true">
+      <span class="eco-switch-thumb"></span>
+    </span>
+    <span class="eco-switch-label">Eco mode</span>
+  </button>
+  <button
+    id="eco-mode-info-btn"
+    type="button"
+    class="eco-info-trigger"
+    aria-haspopup="dialog"
+    aria-controls="eco-mode-dialog"
+  >
+    What is Eco Mode?
+  </button>
+</div>
+
+<aside id="eco-mode-banner" class="eco-toast" hidden aria-live="polite">
+  <span>
+    🌱 <strong>You are now in Eco Mode</strong> (-{site.ecoMode.estimatedEcoReductionPercent}% data)
+  </span>
+  <button type="button" id="eco-banner-more" class="eco-banner-link">
+    What is Eco Mode? ↗
+  </button>
+</aside>
+
+<dialog id="eco-mode-dialog" class="eco-dialog" aria-labelledby="eco-dialog-title">
+  <div class="eco-dialog-box">
+    <div class="eco-dialog-top">
+      <div>
+        <p class="eyebrow">Sustainable Web Design</p>
+        <h2 id="eco-dialog-title">Our Eco Mode: Lowering the Digital Footprint</h2>
+      </div>
+      <button type="button" id="eco-dialog-close" class="eco-dialog-close" aria-label="Close Eco Mode explanation">
+        ✕
+      </button>
+    </div>
+
+    <div class="eco-dialog-content">
+      <p>
+        Every time you visit a webpage, data is transferred across network infrastructure and rendered by your device. Industry research shows that an average webpage produces around <strong>{site.ecoMode.estimatedStandardCo2Grams}g of CO₂ per page view</strong>.
+      </p>
+      <p>
+        In direct continuity with my doctoral research on the <strong>multi-criteria environmental assessment (cLCA) of digital and AI services</strong>, this site includes an interactive <strong>Eco Mode</strong> inspired by <a href={site.ecoMode.agencyUrl} target="_blank" rel="noopener noreferrer">{site.ecoMode.agencyName}</a>.
+      </p>
+
+      <h3>What changes when Eco Mode is active?</h3>
+      <ul>
+        <li>
+          <strong>Dark OLED-Friendly Theme:</strong> Switches to a low-luminance dark palette that significantly reduces screen power consumption on modern OLED/AMOLED displays.
+        </li>
+        <li>
+          <strong>Vector &amp; Text-First Layout:</strong> Replaces non-essential visual previews and heavy media frames with lightweight wireframe placeholders, cutting page payload by over a third.
+        </li>
+        <li>
+          <strong>Single-Weight System Typography:</strong> Uses native operating system fonts without external font downloads while keeping the header and navigation locked in place (zero layout shift).
+        </li>
+        <li>
+          <strong>Zero Motion &amp; Frugal CPU Execution:</strong> Disables CSS transitions, keyframe animations, and smooth-scroll interpolations.
+        </li>
+      </ul>
+
+      <p class="eco-dialog-ref">
+        Inspired by the award-winning agency <a href={site.ecoMode.agencyUrl} target="_blank" rel="noopener noreferrer">SOZO Design</a>. Read their full article:
+        <a href={site.ecoMode.referenceUrl} target="_blank" rel="noopener noreferrer">
+          Sustainable Web Design: Our New Eco Mode ↗
+        </a>
+      </p>
+    </div>
+  </div>
+</dialog>
+
+<script is:inline>
+  (function () {
+    const STORAGE_KEY = 'df_site_eco_mode';
+    const root = document.documentElement;
+    const toggleBtn = document.getElementById('eco-mode-toggle');
+    const banner = document.getElementById('eco-mode-banner');
+    const dialog = document.getElementById('eco-mode-dialog');
+    const infoBtn = document.getElementById('eco-mode-info-btn');
+    const bannerMore = document.getElementById('eco-banner-more');
+    const closeBtn = document.getElementById('eco-dialog-close');
+
+    function applyEcoMode(enabled) {
+      root.setAttribute('data-eco-mode', enabled ? 'true' : 'false');
+      if (toggleBtn) toggleBtn.setAttribute('aria-checked', String(enabled));
+      if (banner) banner.hidden = !enabled;
+
+      // Force button contrast directly via DOM to bypass any Vite/browser CSS cache
+      document.querySelectorAll('.button').forEach((btn) => {
+        if (enabled) {
+          btn.style.setProperty('background-color', '#13261b', 'important');
+          btn.style.setProperty('color', '#ffffff', 'important');
+          btn.style.setProperty('border-color', '#4ade80', 'important');
+        } else {
+          btn.style.removeProperty('background-color');
+          btn.style.removeProperty('color');
+          btn.style.removeProperty('border-color');
+        }
+      });
+    }
+
+    try {
+      const saved = localStorage.getItem(STORAGE_KEY) === 'true';
+      applyEcoMode(saved);
+    } catch {
+      applyEcoMode(false);
+    }
+
+    toggleBtn?.addEventListener('click', () => {
+      const next = root.getAttribute('data-eco-mode') !== 'true';
+      try {
+        localStorage.setItem(STORAGE_KEY, String(next));
+      } catch {}
+      applyEcoMode(next);
+    });
+
+    const openDialog = () => {
+      if (dialog && typeof dialog.showModal === 'function') {
+        dialog.showModal();
+      }
+    };
+    infoBtn?.addEventListener('click', openDialog);
+    bannerMore?.addEventListener('click', openDialog);
+    closeBtn?.addEventListener('click', () => dialog?.close());
+  })();
+</script>
