@@ -51,7 +51,7 @@ const fields: Record<string, string> = {
   papers: 'Articles liés',
   upstream: 'En amont',
   downstream: 'En aval',
-  date: 'Date',
+  date: 'Date de publication de la synthèse',
   summary: 'Synthèse',
 };
 const relationTarget: Record<string, Collection> = {
