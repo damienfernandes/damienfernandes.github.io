@@ -1492,6 +1492,26 @@
       "limit": "Analyse juridique et politique ; ne fournit pas de protocole métrologique."
     }
   ],
+  "publicUpdates": [
+    {
+      "id": "UPDATE_20261119_1",
+      "title": "2026-10 à 2026-11 — Méthodes et données",
+      "date": "2026-11-19",
+      "summary": "Des travaux portent sur la reproductibilité de chaînes d'évaluation environnementale du numérique, la documentation des données et la prise en compte de l'incertitude. La disponibilité d'un outil ou d'une méthode ne constitue pas, à elle seule, une validation des résultats scientifiques."
+    },
+    {
+      "id": "UPDATE_20261119_2",
+      "title": "2026-11 — Cartographie documentaire",
+      "date": "2026-11-19",
+      "summary": "Une cartographie exploratoire organise des résultats, leurs sources et les lacunes documentaires. Les propositions d'extraction nécessitent une vérification humaine avant toute utilisation comme preuve."
+    },
+    {
+      "id": "UPDATE_20261119_3",
+      "title": "2026-11 — Exploration de graphes",
+      "date": "2026-11-19",
+      "summary": "Des graphes locaux permettent de naviguer dans des notes, des articles et des structures logicielles. Certains index d'articles recensent des expressions présentes dans le texte : leurs liens ne démontrent ni une citation valide, ni la pertinence thématique, ni un résultat scientifique."
+    }
+  ],
   "scientificWatch": {
     "updatedAt": "2026-10-20",
     "sourceFile": "references.bib",

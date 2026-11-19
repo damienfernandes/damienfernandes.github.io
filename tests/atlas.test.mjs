@@ -133,6 +133,57 @@ test('Projection par objet ET champ, sans HTML source ni données privées', () 
 });
 test('Empreinte source divergente bloquée', () =>
   assert.throws(() => project(html() + ' ', policy()), /source a changé/));
+test('Synthèses publiques séparées, exclues par défaut et autorisées champ par champ', () => {
+  const source = fixture();
+  source.publicUpdates = [
+    {
+      id: 'U_TEST',
+      title: 'Jalon de test',
+      date: '2026-11-19',
+      summary: 'Synthèse de test',
+    },
+    {
+      id: 'U_PRIVATE',
+      title: privateValue,
+      date: '2026-11-18',
+      summary: privateValue,
+    },
+  ];
+  const h = html(source),
+    p = policy(h);
+  assert.deepEqual(project(h, p).data.publicUpdates, []);
+  p.records.push({
+    collection: 'publicUpdates',
+    id: 'U_TEST',
+    visibility: 'public',
+    fields: ['id', 'title', 'date', 'summary'],
+  });
+  const { data } = project(h, p);
+  assert.deepEqual(data.publicUpdates, [source.publicUpdates[0]]);
+  assert(!JSON.stringify(data).includes(privateValue));
+  p.records.at(-1).fields.pop();
+  assert.throws(() => project(h, p), /Date et synthèse/);
+});
+test('Synthèses publiques : dates et champs invalides refusés', () => {
+  const source = fixture();
+  source.publicUpdates = [
+    { id: 'U_TEST', title: 'Jalon', date: '2026-02-30', summary: 'Texte' },
+  ];
+  const h = html(source),
+    p = policy(h);
+  p.records.push({
+    collection: 'publicUpdates',
+    id: 'U_TEST',
+    visibility: 'public',
+    fields: ['id', 'title', 'date', 'summary'],
+  });
+  assert.throws(() => project(h, p), /Date de synthèse invalide/);
+  source.publicUpdates[0].privateField = privateValue;
+  assert.throws(() => readSource(html(source)), /Champ source inconnu/);
+  const oldPublic = project(html(), policy()).data;
+  delete oldPublic.publicUpdates;
+  assert.equal(validatePublic(oldPublic), true);
+});
 test('Veille avec titre bibliographique : projection explicite, liens conservés', () => {
   const source = fixture();
   source.researchWatch = [

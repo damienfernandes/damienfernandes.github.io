@@ -23,9 +23,9 @@ const data = {
   ],
   researchWatch: [],
 };
-function setup() {
+function setup(atlas = data) {
   const doc = new JSDOM(
-    `<nav class="atlas-tabs"><a href="#knowledge">Graphe</a><a href="#papers">Articles</a></nav><input id="atlas-search"><select id="atlas-year"><option value="all">Toutes</option></select><button id="atlas-export">Exporter</button><p id="atlas-count"></p><section id="atlas-view"></section><aside id="atlas-detail" tabindex="-1"></aside><script id="atlas-public-data" type="application/json">${JSON.stringify(data)}</script>`,
+    `<nav class="atlas-tabs"><a href="#knowledge">Graphe</a><a href="#papers">Articles</a><a href="#updates">Journal</a></nav><input id="atlas-search"><select id="atlas-year"><option value="all">Toutes</option></select><button id="atlas-export">Exporter</button><p id="atlas-count"></p><section id="atlas-view"></section><aside id="atlas-detail" tabindex="-1"></aside><script id="atlas-public-data" type="application/json">${JSON.stringify(atlas)}</script>`,
     { url: 'https://example.org/atlas/#knowledge', runScripts: 'outside-only' },
   );
   doc.window.matchMedia = () => ({ matches: true });
@@ -93,5 +93,41 @@ test('Hash direct et vue vide sont explicites', () => {
   dom.window.location.hash = '#papers';
   dom.window.dispatchEvent(new dom.window.Event('hashchange'));
   assert.equal(d.querySelectorAll('.atlas-card').length, 1);
+  dom.window.close();
+});
+test('Journal public navigable, chronologique et filtrable sans polluer le graphe', () => {
+  const dom = setup({
+    ...data,
+    publicUpdates: [
+      {
+        id: 'U_OLD',
+        title: 'Ancien jalon',
+        date: '2025-03-01',
+        summary: 'Ancienne synthèse',
+      },
+      {
+        id: 'U_NEW',
+        title: 'Nouveau jalon',
+        date: '2026-11-19',
+        summary: 'Nouvelle synthèse',
+      },
+    ],
+  });
+  const d = dom.window.document;
+  assert.equal(d.querySelectorAll('.timeline-node').length, 3);
+  assert.match(d.querySelector('#atlas-count').textContent, /3 éléments/);
+  dom.window.location.hash = '#updates';
+  dom.window.dispatchEvent(new dom.window.Event('hashchange'));
+  assert.equal(d.querySelector('.atlas-card').dataset.id, 'U_NEW');
+  d.querySelector('.atlas-card').click();
+  assert.match(
+    d.querySelector('#atlas-detail').textContent,
+    /Nouvelle synthèse/,
+  );
+  const year = d.querySelector('#atlas-year');
+  year.value = '2025';
+  year.dispatchEvent(new dom.window.Event('change'));
+  assert.equal(d.querySelectorAll('.atlas-card').length, 1);
+  assert.equal(d.querySelector('.atlas-card').dataset.id, 'U_OLD');
   dom.window.close();
 });
