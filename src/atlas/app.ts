@@ -2,17 +2,18 @@ import type { AtlasData, RecordItem } from './types';
 const data = JSON.parse(
   document.getElementById('atlas-public-data')!.textContent!,
 ) as AtlasData;
-type Collection = 'refs' | 'blocks' | 'papers' | 'researchWatch';
+type Collection = 'refs' | 'blocks' | 'papers' | 'researchWatch' | 'publicUpdates';
 type NodeItem = RecordItem & { collection: Collection };
 const collections: Collection[] = ['refs', 'blocks', 'papers', 'researchWatch'];
-const all: NodeItem[] = collections.flatMap((c) =>
-  data[c].map((r) => ({ ...r, collection: c })),
+const all: NodeItem[] = [...collections, 'publicUpdates' as const].flatMap((c) =>
+  (data[c] || []).map((r) => ({ ...r, collection: c })),
 );
 const labels: Record<string, string> = {
   refs: 'Sources',
   blocks: 'Méthodes',
   papers: 'Articles',
   researchWatch: 'Veille',
+  publicUpdates: 'Journal public',
 };
 const fields: Record<string, string> = {
   year: 'Année',
@@ -50,6 +51,8 @@ const fields: Record<string, string> = {
   papers: 'Articles liés',
   upstream: 'En amont',
   downstream: 'En aval',
+  date: 'Date',
+  summary: 'Synthèse',
 };
 const relationTarget: Record<string, Collection> = {
   depends: 'papers',
@@ -103,10 +106,12 @@ const view = document.getElementById('atlas-view')!,
   search = document.getElementById('atlas-search') as HTMLInputElement,
   year = document.getElementById('atlas-year') as HTMLSelectElement;
 let selected = '';
+const itemYear = (r: RecordItem) =>
+  Number(r.year || (typeof r.date === 'string' ? r.date.slice(0, 4) : 0));
 const years = [
   ...new Set(
     all
-      .map((r) => Number(r.year))
+      .map(itemYear)
       .filter((y) => Number.isInteger(y) && y > 1900 && y < 2200),
   ),
 ].sort((a, b) => a - b);
@@ -253,12 +258,13 @@ function list(items: NodeItem[]) {
     b.append(
       el(
         'span',
-        `${labels[r.collection]}${r.year ? ' · ' + r.year : ''}`,
+        `${labels[r.collection]}${r.date ? ' · ' + r.date : r.year ? ' · ' + r.year : ''}`,
         'muted',
       ),
       el('h3', title(r)),
     );
-    if (r.question || r.scope) b.append(el('p', String(r.question || r.scope)));
+    if (r.question || r.scope || r.summary)
+      b.append(el('p', String(r.question || r.scope || r.summary)));
     view.append(b);
   }
 }
@@ -481,6 +487,7 @@ function render() {
     'papers',
     'sources',
     'watch',
+    'updates',
   ].includes(location.hash.slice(1))
     ? location.hash.slice(1)
     : 'knowledge';
@@ -493,13 +500,15 @@ function render() {
     papers: 'papers',
     sources: 'refs',
     watch: 'researchWatch',
+    updates: 'publicUpdates',
   };
   const query = search.value.toLocaleLowerCase('fr');
   const filtered = all.filter(
     (r) =>
-      (section === 'knowledge' || r.collection === map[section]) &&
+      ((section === 'knowledge' && r.collection !== 'publicUpdates') ||
+        r.collection === map[section]) &&
       JSON.stringify(r).toLocaleLowerCase('fr').includes(query) &&
-      (year.value === 'all' || !r.year || Number(r.year) <= Number(year.value)),
+      (year.value === 'all' || !itemYear(r) || itemYear(r) <= Number(year.value)),
   );
   view.replaceChildren();
   document.getElementById('atlas-count')!.textContent =
@@ -524,7 +533,9 @@ function render() {
     return;
   }
   if (section === 'knowledge') graph(filtered);
-  else list(filtered);
+  else list(section === 'updates'
+    ? filtered.sort((a, b) => String(b.date).localeCompare(String(a.date)))
+    : filtered);
 }
 search.addEventListener('input', render);
 year.addEventListener('change', render);

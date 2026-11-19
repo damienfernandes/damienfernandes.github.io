@@ -2,7 +2,7 @@
 
 ## Adaptateur
 
-`atlas-legacy-v10` parse le HTML avec parse5 et lit exactement un `script#atlas-data`, sans exécuter le JavaScript. Il accepte les collections `refs`, `blocks`, `papers`, `researchWatch` et les métadonnées privées connues du format v10. Les champs exportables sont explicités dans `scripts/lib/atlas.mjs`. Tout changement de structure inconnu provoque un arrêt : adapter et tester le schéma, jamais copier le HTML en secours.
+`atlas-legacy-v10` parse le HTML avec parse5 et lit exactement un `script#atlas-data`, sans exécuter le JavaScript. Il accepte les collections `refs`, `blocks`, `papers`, `researchWatch`, `publicUpdates` et les métadonnées privées connues du format v10. Les champs exportables sont explicités dans `scripts/lib/atlas.mjs`. Tout changement de structure inconnu provoque un arrêt : adapter et tester le schéma, jamais copier le HTML en secours.
 
 La version d’adaptateur n’est pas l’affirmation que toute future version de votre Atlas aura ce format. Le fichier exact à utiliser doit être identifié dans votre propre workspace. Le JSON généré contient la sélection publique ; le HTML d’origine reste hors du dépôt du site.
 
@@ -39,7 +39,7 @@ Après lecture des valeurs, ajouter des règles comme celle-ci, avec un identifi
 
 L’identifiant et le titre (`name` pour la veille) sont obligatoires. N’autoriser que des champs réellement présents et relus. `title`, `question`, `risk` ou `summary` ne sont pas publics par nature. Les statuts et vérifications proviennent de la source et ne sont pas certifiés par le logiciel.
 
-Les objets sont reconstruits champ par champ. Les relations vers objets exclus sont retirées. Les compteurs, graphes, recherches et exports ne connaissent que cette projection. Les années manquantes restent manquantes. Le journal, les notes CSI, les avis d’encadrement et les fiches détaillées privées ne font pas partie du schéma public actuel. Publier une synthèse requiert une entrée distincte autorisée et une évolution testée du schéma, pas l’ajout du journal brut.
+Les objets sont reconstruits champ par champ. Les relations vers objets exclus sont retirées. Les compteurs, graphes, recherches et exports ne connaissent que cette projection. Les années manquantes restent manquantes. Le journal brut, les notes CSI, les avis d’encadrement et les fiches détaillées privées ne font pas partie du schéma public. Les synthèses destinées à la revue peuvent être rédigées séparément dans `publicUpdates` de la source, avec `id`, `title`, `date` (AAAA-MM-JJ) et `summary`. Elles restent privées par défaut ; chaque objet et ses quatre champs doivent être relus puis explicitement autorisés dans le manifeste lié à l’empreinte de cette source. La vue « Research Updates » présente uniquement les synthèses ainsi autorisées, et non le journal brut.
 
 Les textes sont rendus comme texte, sans HTML actif. Les liens HTTP(S) publics sont autorisés, les protocoles locaux et actifs refusés. Les fragments HTML sont réduits à leur texte ; pour une équation contenant des chevrons, employer les entités HTML correspondantes dans la source ou revoir le résultat de la projection. La lecture des champs libres par Damien reste indispensable.
 

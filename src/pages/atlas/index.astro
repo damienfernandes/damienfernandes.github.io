@@ -2,6 +2,8 @@
 import Base from '../../layouts/Base.astro';
 import '../../atlas/atlas.css';
 import data from '../../../generated/public/atlas.json';
+import type { AtlasData } from '../../atlas/types';
+const atlasData: AtlasData = data;
 ---
 
 <Base title="Research Atlas" wide>
@@ -23,6 +25,7 @@ import data from '../../../generated/public/atlas.json';
       <a href="#papers">Papers</a>
       <a href="#sources">Sources</a>
       <a href="#watch">Scientific Watch</a>
+      <a href="#updates">Research Updates</a>
     </nav>
     <div class="atlas-toolbar">
       <label>
@@ -62,6 +65,7 @@ import data from '../../../generated/public/atlas.json';
           ...data.blocks,
           ...data.papers,
           ...data.researchWatch,
+          ...(atlasData.publicUpdates || []),
         ].map((r: any) => (
           <li>
             {r.id} — {r.title || r.name}

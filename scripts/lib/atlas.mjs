@@ -71,6 +71,7 @@ export const fields = {
     'status',
     'checked',
   ],
+  publicUpdates: ['id', 'title', 'date', 'summary'],
 };
 const sourceKeys = new Set([
   ...Object.keys(fields),
@@ -262,6 +263,7 @@ export function readSource(html) {
   );
   const globalIds = new Set();
   if (source.researchWatch === undefined) source.researchWatch = [];
+  if (source.publicUpdates === undefined) source.publicUpdates = [];
   if (source.scientificWatch !== undefined)
     validateScientificWatch(source.scientificWatch);
   for (const c of Object.keys(fields)) {
@@ -322,6 +324,7 @@ export function project(html, policy) {
       blocks: [],
       papers: [],
       researchWatch: [],
+      publicUpdates: [],
     },
     seen = new Set();
   for (const rule of policy.records) {
@@ -348,6 +351,11 @@ export function project(html, policy) {
         (rule.collection === 'researchWatch' && rule.fields.includes('name')),
       'Le titre public est obligatoire',
     );
+    if (rule.collection === 'publicUpdates')
+      assert(
+        rule.fields.includes('date') && rule.fields.includes('summary'),
+        'Date et synthèse publiques obligatoires',
+      );
     const row = source[rule.collection].find((x) => x.id === rule.id);
     assert(row, 'Objet approuvé absent');
     const clean = {};
@@ -471,6 +479,7 @@ export function validatePublic(data) {
         );
   }
   for (const c of Object.keys(fields)) {
+    if (c === 'publicUpdates' && data[c] === undefined) continue;
     assert(Array.isArray(data[c]), 'Collection publique absente');
     for (const r of data[c]) {
       assert(
@@ -489,6 +498,23 @@ export function validatePublic(data) {
           (c === 'researchWatch' && typeof r.name === 'string'),
         'Titre requis',
       );
+      if (c === 'publicUpdates') {
+        assert(
+          typeof r.title === 'string' &&
+            r.title.trim() !== '' &&
+            typeof r.summary === 'string' &&
+            r.summary.trim() !== '',
+          'Titre et synthèse requis',
+        );
+        const date = new Date(`${r.date}T00:00:00.000Z`);
+        assert(
+          typeof r.date === 'string' &&
+            /^\d{4}-\d{2}-\d{2}$/.test(r.date) &&
+            !Number.isNaN(date.valueOf()) &&
+            date.toISOString().slice(0, 10) === r.date,
+          'Date de synthèse invalide',
+        );
+      }
       for (const [k, v] of Object.entries(r)) {
         assert(fields[c].includes(k), 'Champ public inconnu');
         if (arrayFields.has(k)) {

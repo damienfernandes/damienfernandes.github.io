@@ -13,6 +13,7 @@ export type AtlasData = {
   blocks: RecordItem[];
   papers: RecordItem[];
   researchWatch: RecordItem[];
+  publicUpdates?: RecordItem[];
   scientificWatch?: {
     updatedAt?: string;
     sourceFile?: string;
