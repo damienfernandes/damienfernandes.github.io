@@ -1629,6 +1629,7 @@
         "extract": "Tirages appariés (covariance IA/B0), indices de Sobol/SHAP sous contraintes de simplex et identification DiD échelonnée.",
         "deliverable": "Tests de robustesse transversaux intégrés dans P0, P1 et P7."
       }
-    ]
+    ],
+    "firstPublishedAt": "2026-10-20"
   }
 }

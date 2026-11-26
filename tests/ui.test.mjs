@@ -131,3 +131,40 @@ test('Journal public navigable, chronologique et filtrable sans polluer le graph
   assert.equal(d.querySelector('.atlas-card').dataset.id, 'U_OLD');
   dom.window.close();
 });
+async function loadAtlasDate() {
+  const code = ts.transpileModule(
+    fs.readFileSync(
+      new URL('../src/utils/atlas-date.ts', import.meta.url),
+      'utf8',
+    ),
+    {
+      compilerOptions: {
+        target: ts.ScriptTarget.ES2022,
+        module: ts.ModuleKind.ESNext,
+      },
+    },
+  ).outputText;
+  return import(
+    `data:text/javascript;base64,${Buffer.from(code).toString('base64')}`
+  );
+}
+test("Date de mise à jour de l'atlas : format lisible et ISO pour <time>", async () => {
+  const { formatAtlasUpdate } = await loadAtlasDate();
+  assert.deepEqual(formatAtlasUpdate('2026-10-20'), {
+    iso: '2026-10-20',
+    label: '20 October 2026',
+  });
+});
+test("Date de mise à jour de l'atlas : absente ou invalide, rien n'est affiché", async () => {
+  const { formatAtlasUpdate } = await loadAtlasDate();
+  for (const bad of [
+    undefined,
+    null,
+    '',
+    '2026-13-40',
+    '2026-02-30',
+    '20/10/2026',
+    20261020,
+  ])
+    assert.equal(formatAtlasUpdate(bad), null);
+});

@@ -16,6 +16,7 @@ export type AtlasData = {
   publicUpdates?: RecordItem[];
   scientificWatch?: {
     updatedAt?: string;
+    firstPublishedAt?: string;
     sourceFile?: string;
     metrics?: Partial<
       Record<

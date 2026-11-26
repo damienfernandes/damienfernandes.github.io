@@ -4,6 +4,11 @@ import '../../atlas/atlas.css';
 import data from '../../../generated/public/atlas.json';
 import type { AtlasData } from '../../atlas/types';
 const atlasData: AtlasData = data;
+import { formatAtlasUpdate } from '../../utils/atlas-date';
+const update = formatAtlasUpdate(atlasData.scientificWatch?.updatedAt);
+const firstPublished = formatAtlasUpdate(
+  atlasData.scientificWatch?.firstPublishedAt,
+);
 ---
 
 <Base title="Research Atlas" wide>
@@ -17,6 +22,23 @@ const atlasData: AtlasData = data;
         Academic sources, methods, and papers.
         <br />
         Strictly validated public records (content may remain in French).
+        {firstPublished && (
+          <>
+            <br />
+            <span class="atlas-updated">
+              First published:{' '}
+              <time datetime={firstPublished.iso}>{firstPublished.label}</time>
+            </span>
+          </>
+        )}
+        {update && (
+          <>
+            <br />
+            <span class="atlas-updated">
+              Last updated: <time datetime={update.iso}>{update.label}</time>
+            </span>
+          </>
+        )}
       </p>
     </header>
     <nav class="atlas-tabs" aria-label="Atlas views">

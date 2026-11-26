@@ -217,6 +217,7 @@ test('Métadonnées de veille exclues par défaut et sélectionnées expliciteme
   const source = fixture();
   source.scientificWatch = {
     updatedAt: '2026-10-20',
+    firstPublishedAt: '2026-10-20',
     sourceFile: 'references.bib',
     metrics: { totalBibEntries: 2 },
     openQuestionsMatrix: [
@@ -267,6 +268,7 @@ test('Veille structurée : champs inconnus, HTML actif et compteurs invalides re
       ],
     },
     { sourceFile: '../private.bib' },
+    { firstPublishedAt: '20/10/2026' },
   ]) {
     const source = fixture();
     source.scientificWatch = watch;

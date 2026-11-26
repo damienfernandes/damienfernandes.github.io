@@ -106,6 +106,7 @@ export function assert(condition, message) {
 }
 const watchFields = [
   'updatedAt',
+  'firstPublishedAt',
   'sourceFile',
   'metrics',
   'openQuestionsMatrix',
@@ -132,6 +133,13 @@ function validateScientificWatch(watch) {
     assert(
       /^\d{4}-\d{2}-\d{2}$/.test(watch.updatedAt),
       'Date de veille invalide',
+    );
+  }
+  if (watch.firstPublishedAt !== undefined) {
+    text(watch.firstPublishedAt);
+    assert(
+      /^\d{4}-\d{2}-\d{2}$/.test(watch.firstPublishedAt),
+      'Date de première publication invalide',
     );
   }
   if (watch.sourceFile !== undefined) {

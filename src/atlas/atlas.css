@@ -326,3 +326,6 @@
     transition: none;
   }
 }
+.atlas-updated {
+  color: var(--muted);
+}

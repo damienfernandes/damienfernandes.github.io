@@ -28,6 +28,22 @@ for (const route of routes)
     fs.existsSync(path.join(root, 'dist', route, 'index.html')),
     `Route absente : ${route}`,
   );
+const atlasWatch = JSON.parse(
+  fs.readFileSync(path.join(root, 'generated/public/atlas.json'), 'utf8'),
+).scientificWatch;
+const atlasHtml = fs.readFileSync(
+  path.join(root, 'dist/atlas/index.html'),
+  'utf8',
+);
+for (const [field, label] of [
+  ['updatedAt', 'mise à jour'],
+  ['firstPublishedAt', 'première publication'],
+])
+  if (atlasWatch?.[field])
+    assert(
+      atlasHtml.includes(`<time datetime="${atlasWatch[field]}">`),
+      `Date de ${label} de l'atlas absente du HTML`,
+    );
 assert(
   !fs.existsSync(path.join(root, 'dist/style-guide/index.html')),
   'Style guide présent dans la sortie publique',
