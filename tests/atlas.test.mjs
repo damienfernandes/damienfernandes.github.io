@@ -538,3 +538,16 @@ test('Assets : traversée, symlink et empreinte divergente bloqués avant copie'
     fs.rmSync(dir, { recursive: true, force: true });
   }
 });
+test('Atlas public généré : dates cohérentes et synthèses publiques conservées', () => {
+  const data = JSON.parse(
+    fs.readFileSync(path.join(root, 'generated/public/atlas.json'), 'utf8'),
+  );
+  assert.ok(data.publicUpdates.length > 0);
+  const latest = data.publicUpdates
+    .map((u) => u.date)
+    .sort()
+    .at(-1);
+  const { firstPublishedAt, updatedAt } = data.scientificWatch;
+  assert.ok(firstPublishedAt <= updatedAt);
+  assert.ok(updatedAt >= latest);
+});
