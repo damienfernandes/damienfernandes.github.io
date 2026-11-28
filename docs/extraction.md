@@ -9,6 +9,7 @@ La version d’adaptateur n’est pas l’affirmation que toute future version d
 Les fiches `researchWatch` acceptent soit `name`, soit `title`, ainsi que les métadonnées bibliographiques `authors`, `year`, `url` et les relations `blocks`. Les relations `ref` doivent toujours cibler une référence publique existante. Ajouter une notice depuis une bibliographie locale ne constitue pas une revérification de la référence ou des affirmations associées.
 
 L’objet facultatif `scientificWatch` accepte uniquement `updatedAt`, `firstPublishedAt` (date de première mise en ligne publique), `sourceFile`, `metrics` et `openQuestionsMatrix`, avec validation des champs imbriqués, des compteurs et des textes. Il reste exclu par défaut. Pour le sélectionner, ajouter au manifeste une liste `scientificWatch` contenant les noms exacts des champs autorisés. Cette sélection est inscrite dans le rapport d’extraction. Les `papers` de la matrice ciblent des articles publics ; ses `readings` sont des clés de la bibliographie externe, sans lien Atlas implicite. Les compteurs existants sont déclaratifs et ne prouvent pas une vérification des sources.
+Les `publicUpdates` sont des synthèses rédigées pour le site : le pipeline de réconciliation externe les réinjecte à chaque régénération, afin qu’elles ne disparaissent pas. `scientificWatch.updatedAt` est la date du dernier changement réel du contenu public, pas la date du build.
 
 ## Autorisation
 
